@@ -1,0 +1,21 @@
+.my-list-icon{
+    float: left;
+    width: 72px;
+    height: 48px;
+}
+.my-list-icon img{
+    margin-left: 8px;
+    width: 48px;
+    height: 48px; 
+}
+
+.my-list-desc{
+    float: left; 
+    width: calc(100% - 72px - 100px - 16px);
+}
+
+.my-list-value{
+    float: left;
+    width: 100px !important;
+    text-align: right;
+}

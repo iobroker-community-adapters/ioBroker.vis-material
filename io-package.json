@@ -1,0 +1,48 @@
+{
+    "common": {
+        "name": "vis-material",
+        "version": "0.0.1",
+        "news": {     
+            "0.0.1": {
+                "en": "initial adapter",
+                "de": "Initiale Version",
+                "ru": "Первоначальный адаптер",
+                "pt": "Versão inicial",
+                "fr": "Version initiale",
+                "nl": "Eerste release"
+            }
+        },
+        "title": "ioBroker Visualisation - material Widgets",
+        "desc": {
+            "en": "material Widgets for ioBroker.vis",
+            "de": "material Widgets für ioBroker.vis",
+            "ru": "material Widgets для ioBroker.vis",
+            "pt": "molde de Widgets para o ioBroker.vis",
+            "fr": "modèle de Widgets pour ioBroker.vis",
+            "nl": "sjabloon widgets voor ioBroker.vis"
+        },
+        "platform": "Javascript/Node.js",
+        "icon": "material.png",
+        "enabled": true,
+        "mode": "once",
+        "extIcon": "https://github.com/ioBroker/ioBroker.js-controller/raw/master/adapter/example/admin/example.png",
+        "keywords": ["material", "vis", "GUI", "graphical", "scada"],
+        "readme": "https://github.com/ioBroker/ioBroker.vis-material/blob/master/README.md",
+        "authors": [
+            "@@Author@@ <@@email@@>"
+        ],
+        "localLink": "%web_protocol%://%ip%:%web_port%/vis/edit.html",
+        "license": "MIT",
+        "dependencies": ["vis"],
+        "onlyWWW": true,
+        "noConfig": true,
+        "singleton": true,
+        "type": "visualization-widgets",
+        "restartAdapters": ["vis"]
+    },
+    "native": {
+        "dependencies": []
+    },
+    "instanceObjects": [
+    ]
+}
