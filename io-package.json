@@ -27,7 +27,7 @@
         "mode": "once",
         "extIcon": "https://github.com/ioBroker/ioBroker.js-controller/raw/master/adapter/example/admin/example.png",
         "keywords": ["material", "vis", "GUI", "graphical", "scada"],
-        "readme": "https://github.com/ioBroker/ioBroker.vis-material/blob/master/README.md",
+        "readme": "https://github.com/nisiode/ioBroker.vis-material/blob/master/README.md",
         "authors": [
             "@@Author@@ <@@email@@>"
         ],

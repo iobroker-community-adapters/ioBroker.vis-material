@@ -9,15 +9,15 @@
   "contributors": [
     "@@Author@@ <@@email@@>"
   ],
-  "homepage": "https://github.com/ioBroker/ioBroker.vis-material",
+  "homepage": "https://github.com/nisiode/ioBroker.vis-material.git",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ioBroker/ioBroker.vis-material"
+    "url": "https://github.com/nisiode/ioBroker.vis-material.git"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/ioBroker/ioBroker.vis-material/blob/master/LICENSE"
+      "url": "https://github.com/nisiode/ioBroker.vis-material/blob/master/LICENSE"
     }
   ],
   "keywords": [
@@ -37,7 +37,7 @@
     "grunt-exec": "^0.4.6"
   },
   "bugs": {
-    "url": "https://github.com/ioBroker/ioBroker.vis-material/issues"
+    "url": "https://github.com/nisiode/ioBroker.vis-material/issues"
   },
   "main": "widgets/material.html",
   "scripts": {
