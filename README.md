@@ -1,20 +1,20 @@
-![Logo](admin/template.png)
-ioBroker.vis-template
+![Logo](admin/material.png)
+ioBroker.vis-material
 ============
 
-This is template widget set to create your own.
+This is material widget set to create your own.
 ![Screenshot](img/widgets.png)
 
-You can read instructions in template.js, template.html files
+You can read instructions in material.js, material.html files
 
 To create your own widget set:
-- download and unpack this packet from github ```https://github.com/ioBroker/ioBroker.vis-template/archive/master.zip```
-  or clone git repository ```git clone https://github.com/ioBroker/ioBroker.vis-template.git```
+- download and unpack this packet from github ```https://github.com/ioBroker/ioBroker.vis-material/archive/master.zip```
+  or clone git repository ```git clone https://github.com/ioBroker/ioBroker.vis-material.git```
 
-- download required npm packets. Write in ioBroker.vis-template directory:
+- download required npm packets. Write in ioBroker.vis-material directory:
   npm install
   
-- set name of this template. Call
+- set name of this material. Call
   
   ```grunt rename --name=mynewname --email=email@mail.com --author="Author Name"```
   
@@ -24,9 +24,9 @@ To create your own widget set:
   
   ```npm install -g grunt-cli```
  
-- rename directory from *ioBroker.vis-template* to *iobroker.vis-mynewname*
+- rename directory from *ioBroker.vis-material* to *iobroker.vis-mynewname*
 
-- to use this template you should copy it into *iobroker/node_modules* directory
+- to use this material you should copy it into *iobroker/node_modules* directory
   call ```iobroker visdebug mynewname``` to enable debugging and upload widget to "vis". (This works only from V0.7.15 of js-controller)
 
 - enable debug in vis with
@@ -51,5 +51,5 @@ To create your own widget set:
 - (bluefox) initial checkin
 
 ## License
- Copyright (c) 2015-2016 @@Author@@
+ Copyright (c) 2015-2016 nisiode
  MIT

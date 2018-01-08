@@ -12,15 +12,15 @@ module.exports = function (grunt) {
     var iopackage = grunt.file.readJSON('io-package.json');
     var version   = (pkg && pkg.version) ? pkg.version : iopackage.common.version;
     var newname   = grunt.option('name');
-    var author    = grunt.option('author') || '@@Author@@';
-    var email     = grunt.option('email')  || '@@email@@';
+    var author    = grunt.option('author') || 'nisiode';
+    var email     = grunt.option('email')  || 'email@mail.com';
     var fs        = require('fs');
 
     // check arguments
     if (process.argv[2] == 'rename') {
 		console.log('Try to rename to "' + newname + '"');
         if (!newname) {
-            console.log('Please write the new template name, like: "grunt rename --name=mywidgetset" --author="Author Name"');
+            console.log('Please write the new material name, like: "grunt rename --name=mywidgetset" --author="Author Name"');
             process.exit();
         }
         if (newname.indexOf(' ') != -1) {
@@ -31,17 +31,17 @@ module.exports = function (grunt) {
             console.log('Name must be lower case.');
             process.exit();
         }
-        if (fs.existsSync(__dirname + '/admin/template.png')) {
-            fs.renameSync(__dirname + '/admin/template.png',              __dirname + '/admin/' + newname + '.png');
+        if (fs.existsSync(__dirname + '/admin/material.png')) {
+            fs.renameSync(__dirname + '/admin/material.png',              __dirname + '/admin/' + newname + '.png');
         }
-        if (fs.existsSync(__dirname + '/widgets/template.html')) {
-            fs.renameSync(__dirname + '/widgets/template.html',           __dirname + '/widgets/' + newname + '.html');
+        if (fs.existsSync(__dirname + '/widgets/material.html')) {
+            fs.renameSync(__dirname + '/widgets/material.html',           __dirname + '/widgets/' + newname + '.html');
         }
-        if (fs.existsSync(__dirname + '/widgets/template/js/template.js')) {
-            fs.renameSync(__dirname + '/widgets/template/js/template.js', __dirname + '/widgets/template/js/' + newname + '.js');
+        if (fs.existsSync(__dirname + '/widgets/material/js/material.js')) {
+            fs.renameSync(__dirname + '/widgets/material/js/material.js', __dirname + '/widgets/material/js/' + newname + '.js');
         }
-        if (fs.existsSync(__dirname + '/widgets/template')) {
-            fs.renameSync(__dirname + '/widgets/template',                __dirname + '/widgets/' + newname);
+        if (fs.existsSync(__dirname + '/widgets/material')) {
+            fs.renameSync(__dirname + '/widgets/material',                __dirname + '/widgets/' + newname);
         }
     }
 
@@ -91,19 +91,19 @@ module.exports = function (grunt) {
                 options: {
                     patterns: [
                         {
-                            match: /template/g,
+                            match: /material/g,
                             replacement: newname
                         },
                         {
-                            match: /Template/g,
-                            replacement: newname ? (newname[0].toUpperCase() + newname.substring(1)) : 'Template'
+                            match: /Material/g,
+                            replacement: newname ? (newname[0].toUpperCase() + newname.substring(1)) : 'Material'
                         },
                         {
-                            match: /@@Author@@/g,
+                            match: /nisiode/g,
                             replacement: author
                         },
                         {
-                            match: /@@email@@/g,
+                            match: /email@mail.com/g,
                             replacement: email
                         }
                     ]

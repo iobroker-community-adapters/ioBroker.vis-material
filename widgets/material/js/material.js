@@ -1,7 +1,7 @@
 /*
-    ioBroker.vis template Widget-Set
+    ioBroker.vis material Widget-Set
     version: "0.0.1"
-    Copyright 10.2015-2016 @@Author@@<@@email@@>
+    Copyright 10.2015-2016 nisiode<email@mail.com>
 */
 "use strict";
 
@@ -25,13 +25,13 @@ $.extend(true, systemDictionary, {
     "Instance":  {"en": "Instance", "de": "Instanz", "ru": "?????????"}
 });
 
-// this code can be placed directly in template.html
-vis.binds.template = {
+// this code can be placed directly in material.html
+vis.binds.material = {
     version: "0.0.2",
     showVersion: function () {
-        if (vis.binds.template.version) {
-            console.log('Version template: ' + vis.binds.template.version);
-            vis.binds.template.version = null;
+        if (vis.binds.material.version) {
+            console.log('Version material: ' + vis.binds.material.version);
+            vis.binds.material.version = null;
         }
     },
 	getValue: function (widgetID, view, data) {
@@ -39,7 +39,7 @@ vis.binds.template = {
         // if nothing found => wait
         if (!$div.length) {
             return setTimeout(function () {
-                vis.binds.template.getValue(widgetID, view, data);
+                vis.binds.material.getValue(widgetID, view, data);
             }, 100);
         }
         var text = '';
@@ -59,4 +59,4 @@ vis.binds.template = {
     }
 };
 
-vis.binds.template.showVersion();
+vis.binds.material.showVersion();

@@ -1,13 +1,13 @@
 {
   "name": "iobroker.vis-material",
-  "description": "template Widgets for ioBroker.vis",
+  "description": "material Widgets for ioBroker.vis",
   "version": "0.0.1",
   "author": {
-    "name": "@@Author@@",
-    "email": "@@email@@"
+    "name": "nisiode",
+    "email": "email@mail.com"
   },
   "contributors": [
-    "@@Author@@ <@@email@@>"
+    "nisiode <email@mail.com>"
   ],
   "homepage": "https://github.com/nisiode/ioBroker.vis-material.git",
   "repository": {
@@ -23,18 +23,19 @@
   "keywords": [
     "ioBroker",
     "GUI",
-	"template vis"
+    "material vis"
   ],
   "devDependencies": {
     "grunt": "^0.4.5",
-    "grunt-replace": "^0.9.3",
-    "grunt-contrib-jshint": "^0.11.2",
-    "grunt-jscs": "^2.0.0",
-    "grunt-http": "^1.6.0",
+    "grunt-cli": "^1.2.0",
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-compress": "^0.13.0",
     "grunt-contrib-copy": "^0.8.0",
-    "grunt-exec": "^0.4.6"
+    "grunt-contrib-jshint": "^0.11.3",
+    "grunt-exec": "^0.4.6",
+    "grunt-http": "^1.6.0",
+    "grunt-jscs": "^2.8.0",
+    "grunt-replace": "^0.9.3"
   },
   "bugs": {
     "url": "https://github.com/nisiode/ioBroker.vis-material/issues"
