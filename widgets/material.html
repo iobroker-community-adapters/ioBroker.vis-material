@@ -9,15 +9,16 @@
 <script type="text/javascript" src="widgets/material/js/material.js"></script>
 
 
-<script id="tplMaterialListitem"
+<script id="tplMaListDoor"
         type="text/ejs"
         class="vis-tpl"
-        data-vis-prev='<div id="prev_tplMaterialListitem" style="position: relative; text-align: initial;padding: 4px "><div class="vis-widget_prev " style="width: 280px; height: 159px;" > <div class="myset-class vis-widget-prev-body " style="padding:2px"> OID: hm-rpc.0.EEQ0006629.1.STATE<br> OID value: true<br> Color: <span style="color: rgb(128, 0, 0);">#800000</span><br> htmlText: <textarea readonly="" style="width:100%">asda</textarea></div>'
+        data-vis-prev='<div id="prev_tplMaListDoor" style="position: relative; text-align: initial;padding: 4px "><div class="vis-widget_prev " style="width: 280px; height: 159px;" > <div class="myset-class vis-widget-prev-body " style="padding:2px"> OID: hm-rpc.0.EEQ0006629.1.STATE<br> OID value: true<br> Color: <span style="color: rgb(128, 0, 0);">#800000</span><br> htmlText: <textarea readonly="" style="width:100%">asda</textarea></div>'
         data-vis-attrs="oid/id;title/text;subtitle/text;"
         data-vis-set="material"
         data-vis-type="val"
-        data-vis-name="Listitem">
+        data-vis-name="ListDoor">
     <div class="vis-widget <%== this.data.attr('class') %>" style="position: relative; width:100%; height:48px; left:0px;" id="<%= this.data.attr('wid') %>" >
+		<div class="template-class vis-widget-body <%== this.data.attr('class') %>" >
 		<div class="my-list-icon">
 			<img src="widgets/material/img/fts_door_open.png">
 		</div>
@@ -32,5 +33,6 @@
         <div class="my-list-value mdui-value"><%
             vis.binds.material.getValue(this.data.wid, this.view, this.data);
       %></div>
+		</div>
     </div>
 </script>
