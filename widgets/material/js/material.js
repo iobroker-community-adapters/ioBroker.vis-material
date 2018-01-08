@@ -36,8 +36,8 @@ vis.binds.material = {
             }, 100);
         }
 
-        var value = (vis.states[data.oid + '.val']) ? 'open' : 'closed';
-        var src = (vis.states[data.oid + '.val']) ? 'widgets/material/img/fts_door_open.png' : 'widgets/material/img/fts_door.png';
+        var value = (vis.states[data.oid + '.val']) ? 'closed' : 'open';
+        var src = (value) ? 'widgets/material/img/fts_door.png' : 'widgets/material/img/fts_door_open.png';
         
         $div.find('.my-list-value').html(value);
         $div.find('.my-list-icon').find('img').attr('src', src);
@@ -46,8 +46,8 @@ vis.binds.material = {
         if (data.oid) {
             vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
                 $div.find('.my-list-value').html(newVal);
-                var value = (newVal) ? 'open' : 'closed';
-                var src = (newVal) ? 'widgets/material/img/fts_door_open.png' : 'widgets/material/img/fts_door.png';
+                var value = (newVal) ? 'closed' : 'open';
+                var src = (newVal) ? 'widgets/material/img/fts_door.png' : 'widgets/material/img/fts_door_open.png';
                 $div.find('.my-list-value').html(value);
                 $div.find('.my-list-icon').find('img').attr('src', src);
             });
@@ -62,16 +62,17 @@ vis.binds.material = {
             }, 100);
         }
 
-        var value = (vis.states[data.oid + '.val']) ? 'open' : 'closed';
-        var src = (vis.states[data.oid + '.val']) ? 'widgets/material/img/fts_window_2w_open.png' : 'widgets/material/img/fts_window_2w.png';
+        var value = (vis.states[data.oid + '.val']) ? 'closed' : 'open';
+        var src = (value) ? 'widgets/material/img/fts_window_2w.png' : 'widgets/material/img/fts_window_2w_open.png';
+
         $div.find('.my-list-value').html(value);
         $div.find('.my-list-icon').find('img').attr('src', src);
 
         // subscribe on updates of value
         if (data.oid) {
             vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
-                var value = (newVal) ? 'open' : 'close';
-                var src = (newVal) ? 'widgets/material/img/fts_window_2w_open.png' : 'widgets/material/img/fts_window_2w.png';
+                var value = (newVal) ? 'closed' : 'open';
+                var src = (newVal) ? 'widgets/material/img/fts_window_2w.png' : 'widgets/material/img/fts_window_2w_open.png';
                 $div.find('.my-list-value').html(value);
                 $div.find('.my-list-icon').find('img').attr('src', src);
             });
