@@ -8,15 +8,8 @@
 // add translations for edit mode
 if (vis.editMode) {
     $.extend(true, systemDictionary, {
-        "myColor":          {"en": "myColor",       "de": "mainColor",  "ru": "??? ????"},
-        "myColor_tooltip":  {
-            "en": "Description of\x0AmyColor",
-            "de": "Beschreibung von\x0AmyColor",
-            "ru": "????????\x0AmyColor"
-        },
-        "htmlText":         {"en": "htmlText",      "de": "htmlText",   "ru": "htmlText"},
-        "group_extraMyset": {"en": "extraMyset",    "de": "extraMyset", "ru": "extraMyset"},
-        "extraAttr":        {"en": "extraAttr",     "de": "extraAttr",  "ru": "extraAttr"}
+        "title":          {"en": "title",       "de": "Titel",  "ru": "???"},
+        "subtitle":         {"en": "subtitle",      "de": "Untertitel",   "ru": "???"}
     });
 }
 
@@ -34,26 +27,54 @@ vis.binds.material = {
             vis.binds.material.version = null;
         }
     },
-	getValue: function (widgetID, view, data) {
+	tplMdListDoor: function (widgetID, view, data) {
         var $div = $('#' + widgetID);
         // if nothing found => wait
         if (!$div.length) {
             return setTimeout(function () {
-                vis.binds.material.getValue(widgetID, view, data);
+                vis.binds.material.tplMdListDoor(widgetID, view, data);
             }, 100);
         }
-        var text = '';
-        if(vis.states[data.oid + '.val']){
-            text = 'closed';
-        }else{
-            text = 'open';
-        }
+
+        var value = (vis.states[data.oid + '.val']) ? 'closed' : 'open';
+        var src = (value) ? 'widgets/material/img/fts_door.png' : 'widgets/material/img/fts_door_open.png';
         
-        $div.find('.my-list-value').html(text);
+        $div.find('.my-list-value').html(value);
+        $div.find('.my-list-icon').find('img').attr('src', src);
+
         // subscribe on updates of value
         if (data.oid) {
             vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
                 $div.find('.my-list-value').html(newVal);
+                var value = (newVal) ? 'closed' : 'open';
+                var src = (newVal) ? 'widgets/material/img/fts_door.png' : 'widgets/material/img/fts_door_open.png';
+                $div.find('.my-list-value').html(value);
+                $div.find('.my-list-icon').find('img').attr('src', src);
+            });
+        }
+    },
+	tplMdListWindow: function (widgetID, view, data) {
+        var $div = $('#' + widgetID);
+        // if nothing found => wait
+        if (!$div.length) {
+            return setTimeout(function () {
+                vis.binds.material.tplMdListWindow(widgetID, view, data);
+            }, 100);
+        }
+
+        var value = (vis.states[data.oid + '.val']) ? 'closed' : 'open';
+        var src = (value) ? 'widgets/material/img/fts_window_2w.png' : 'widgets/material/img/fts_window_2w_open.png';
+
+        $div.find('.my-list-value').html(value);
+        $div.find('.my-list-icon').find('img').attr('src', src);
+
+        // subscribe on updates of value
+        if (data.oid) {
+            vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
+                var value = (newVal) ? 'closed' : 'open';
+                var src = (newVal) ? 'widgets/material/img/fts_window_2w.png' : 'widgets/material/img/fts_window_2w_open.png';
+                $div.find('.my-list-value').html(value);
+                $div.find('.my-list-icon').find('img').attr('src', src);
             });
         }
     }
