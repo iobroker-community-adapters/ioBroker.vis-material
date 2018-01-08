@@ -1,11 +1,10 @@
 .my-list{
     width: 100%;
-    height: 48px;
+    height: 56px;
 }
 .my-list-icon{
     float: left;
     width: 72px;
-    height: 48px;
 }
 .my-list-icon img{
     margin-left: 8px;

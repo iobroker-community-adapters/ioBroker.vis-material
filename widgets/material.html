@@ -12,7 +12,7 @@
 <script id="tplMaListDoor"
         type="text/ejs"
         class="vis-tpl"
-        data-vis-prev='<div id="prev_tplMaListDoor" style="position: relative; text-align: initial;padding: 4px "><div class="vis-widget_prev " style="width: 280px; height: 159px;" > <div class="myset-class vis-widget-prev-body " style="padding:2px"> OID: hm-rpc.0.EEQ0006629.1.STATE<br> OID value: true<br> Color: <span style="color: rgb(128, 0, 0);">#800000</span><br> htmlText: <textarea readonly="" style="width:100%">asda</textarea></div>'
+        data-vis-prev='<div id="prev_tplMaListDoor" style="position: relative; text-align: initial;padding: 4px "><div class="vis-widget_prev " style="width: 280px; height: 159px;" > <div class="myset-class vis-widget-prev-body " style="padding:2px"><img src="widgets/material/img/fts_door.png"></div>'
         data-vis-attrs="oid/id;title/text;subtitle/text;"
         data-vis-set="material"
         data-vis-type="val"
@@ -20,7 +20,7 @@
     <div class="vis-widget <%== this.data.attr('class') %> my-list" id="<%= this.data.attr('wid') %>" >
 		<div class="vis-widget-body" >
 			<div class="my-list-icon">
-				<img src="widgets/material/img/fts_door_open.png">
+				<img src="widgets/material/img/fts_door.png">
 			</div>
 			<div class="my-list-desc">
 				<div class="my-list-title mdui-title" >
@@ -30,9 +30,37 @@
 					<%= this.data.attr('subtitle') %>
 				</div>
 			</div>
-			<div class="my-list-value mdui-value"><%
-				vis.binds.material.getValue(this.data.wid, this.view, this.data);
-		  %></div>
+			<div class="my-list-value mdui-value"></div>
 		</div>
-    </div>
+	</div>
+	<% vis.binds.material.tplMdListDoor(this.data.wid, this.view, this.data);  %>
+</script>
+
+<script id="tplMaListWindow"
+        type="text/ejs"
+        class="vis-tpl"
+        data-vis-prev='<div id="prev_tplMaListWindow" style="position: relative; text-align: initial;padding: 4px ">
+			<div class="vis-widget_prev " style="width: 280px; height: 159px;" > 
+				<div class="myset-class vis-widget-prev-body " style="padding:2px"><img src="widgets/material/img/fts_window_2w.png"></div></div></div>'
+        data-vis-attrs="oid/id;title/text;subtitle/text;"
+        data-vis-set="material"
+        data-vis-type="val"
+        data-vis-name="ListWindow">
+		<div class="vis-widget <%== this.data.attr('class') %> my-list" id="<%= this.data.attr('wid') %>" >
+			<div class="vis-widget-body" >
+				<div class="my-list-icon">
+					<img src="widgets/material/img/fts_window_2w.png">
+				</div>
+				<div class="my-list-desc">
+					<div class="my-list-title mdui-title" >
+						<%= this.data.attr('title') %>
+					</div>
+					<div class="my-list-subtitle mdui-subtitle">
+						<%= this.data.attr('subtitle') %>
+					</div>
+				</div>
+				<div class="my-list-value mdui-value"></div>
+			</div>
+		</div>
+		<% vis.binds.material.tplMdListWindow(this.data.wid, this.view, this.data);  %>
 </script>
