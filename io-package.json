@@ -25,7 +25,7 @@
         "icon": "material.png",
         "enabled": true,
         "mode": "once",
-        "extIcon": "https://github.com/ioBroker/ioBroker.js-controller/raw/master/adapter/example/admin/example.png",
+        "extIcon": "https://github.com/nisiode/ioBroker.vis-material/blob/master/img/widgets.png",
         "keywords": ["material", "vis", "GUI", "graphical", "scada"],
         "readme": "https://github.com/nisiode/ioBroker.vis-material/blob/master/README.md",
         "authors": [
