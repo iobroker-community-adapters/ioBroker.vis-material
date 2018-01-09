@@ -8,8 +8,8 @@
 // add translations for edit mode
 if (vis.editMode) {
     $.extend(true, systemDictionary, {
-        "title":          {"en": "title",       "de": "Titel",  "ru": "???"},
-        "subtitle":         {"en": "subtitle",      "de": "Untertitel",   "ru": "???"}
+        "title":          {"en": "Title",       "de": "Titel",  "ru": "???"},
+        "subtitle":         {"en": "Subtitle",      "de": "Untertitel",   "ru": "???"}
     });
 }
 
