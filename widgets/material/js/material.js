@@ -20,7 +20,7 @@ $.extend(true, systemDictionary, {
 
 // this code can be placed directly in material.html
 vis.binds.material = {
-    version: "0.0.2",
+    version: "0.0.1",
     showVersion: function () {
         if (vis.binds.material.version) {
             console.log('Version material: ' + vis.binds.material.version);
