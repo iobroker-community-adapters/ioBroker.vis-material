@@ -9,9 +9,9 @@ You can read instructions in material.js, material.html files
 
 ## Changelog
 
-### 0.0.1 (2015-06-28)
-- (nisio) initial checkin
+### 0.0.1 (2018-01-01)
+- (nisio) initial version
 
 ## License
- Copyright (c) 2015-2016 nisiode
+ Copyright (c) 2018-2018 nisiode
  MIT

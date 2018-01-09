@@ -25,7 +25,7 @@
         "icon": "material.png",
         "enabled": true,
         "mode": "once",
-        "extIcon": "https://github.com/nisiode/ioBroker.vis-material/blob/master/img/widgets.png",
+        "extIcon": "https://raw.githubusercontent.com/nisiode/ioBroker.vis-material/master/admin/material.png",
         "keywords": ["material", "vis", "GUI", "graphical", "scada"],
         "readme": "https://github.com/nisiode/ioBroker.vis-material/blob/master/README.md",
         "authors": [
