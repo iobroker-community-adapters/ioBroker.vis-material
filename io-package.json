@@ -29,7 +29,7 @@
         "keywords": ["material", "vis", "GUI", "graphical", "scada"],
         "readme": "https://github.com/nisiode/ioBroker.vis-material/blob/master/README.md",
         "authors": [
-            "nisiode <email@mail.com>"
+            "nisiode <nisio.air@gmail.com>"
         ],
         "localLink": "%web_protocol%://%ip%:%web_port%/vis/edit.html",
         "license": "MIT",
