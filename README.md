@@ -13,7 +13,7 @@ material - Material widgets for ioBroker.vis.
 
 You can read instructions in material.js, material.html files
 
-These widgets are in addition to the material design style of Uhule, which you can find here:
+These widgets are in addition to the material design style of Uhula, which you can find here:
 https://github.com/Uhula/ioBroker-Material-Design-Style
 
 
