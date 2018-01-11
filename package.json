@@ -42,6 +42,7 @@
   "bugs": {
     "url": "https://github.com/nisiode/ioBroker.vis-material/issues"
   },
+  "readmeFilename": "README.md",
   "main": "widgets/material.html",
   "scripts": {
     "test": "node node_modules/mocha/bin/mocha --exit"
