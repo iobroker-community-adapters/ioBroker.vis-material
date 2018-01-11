@@ -1,6 +1,6 @@
 {
   "name": "iobroker.vis-material",
-  "description": "material Widgets for ioBroker.vis",
+  "description": "material widgets for ioBroker.vis",
   "version": "0.0.1",
   "author": {
     "name": "nisiode",
@@ -44,7 +44,7 @@
   },
   "main": "widgets/material.html",
   "scripts": {
-    "test": "node node_modules/mocha/bin/mocha"
+    "test": "node node_modules/mocha/bin/mocha --exit"
   },
   "license": "MIT"
 }
