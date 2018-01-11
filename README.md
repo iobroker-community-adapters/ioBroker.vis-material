@@ -4,6 +4,7 @@ ioBroker.vis-material
 
 [![NPM version](http://img.shields.io/npm/v/iobroker.vis-material.svg)](https://www.npmjs.com/package/iobroker.vis-material)
 [![Downloads](https://img.shields.io/npm/dm/iobroker.vis-material.svg)](https://www.npmjs.com/package/iobroker.vis-material)
+[![Travis-CI](http://img.shields.io/travis/nisiode/ioBroker.vis-material/master.svg)](https://travis-ci.org/nisiode/ioBroker.vis-material)
 
 [![NPM](https://nodei.co/npm/iobroker.vis-material.png?downloads=true)](https://nodei.co/npm/iobroker.vis-material/)
 
