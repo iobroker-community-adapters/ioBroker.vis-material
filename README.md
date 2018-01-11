@@ -2,9 +2,21 @@
 ioBroker.vis-material
 ============
 
-This is material widget set to create your own.
+[![NPM version](http://img.shields.io/npm/v/iobroker.vis-material.svg)](https://www.npmjs.com/package/iobroker.vis-material)
+[![Downloads](https://img.shields.io/npm/dm/iobroker.vis-material.svg)](https://www.npmjs.com/package/iobroker.vis-material)
+
+[![NPM](https://nodei.co/npm/iobroker.vis-material.png?downloads=true)](https://nodei.co/npm/iobroker.vis-material/)
+
+
+material - Material widgets for ioBroker.vis.
 
 You can read instructions in material.js, material.html files
+
+These widgets are in addition to the material design style of Uhule, which you can find here:
+https://github.com/Uhula/ioBroker-Material-Design-Style
+
+
+![Example](img/widgets.png)
 
 
 ## Changelog
