@@ -17,7 +17,7 @@ if (vis.editMode) {
 $.extend(true, systemDictionary, {
     "Instance":     {"en": "Instance", "de": "Instanz", "ru": "?????????"},
     "open":         {"en": "open", "de": "offen", "ru": "?????????"},
-    "closed":       {"en": "closed", "de": "geschlossen", "ru": "?????????"},
+    "close":        {"en": "close", "de": "geschlossen", "ru": "?????????"},
 });
 
 // this code can be placed directly in material.html
@@ -30,6 +30,10 @@ vis.binds.material = {
         }
     },
 	tplMdListDoor: function (widgetID, view, data) {
+        const srcOpen = 'widgets/material/img/fts_door_open.png';
+        const srcClose = 'widgets/material/img/fts_door.png';
+        const valOpen = _('open');
+        const valClose = _('close');
         var $div = $('#' + widgetID);
         // if nothing found => wait
         if (!$div.length) {
@@ -38,23 +42,27 @@ vis.binds.material = {
             }, 100);
         }
 
-        var value = (vis.states[data.oid + '.val']) ? 'open' : 'closed';
-        var src = (vis.states[data.oid + '.val']) ? 'widgets/material/img/fts_door_open.png' : 'widgets/material/img/fts_door.png';
-        
-        $div.find('.my-list-value').html(_(value));
-        $div.find('.my-list-icon').find('img').attr('src', src);
+        function update(state){
+            var value = (state) ? valOpen : valClose;
+            var src = (state) ? srcOpen : srcClose;
+            $div.find('.my-list-value').html(value);
+            $div.find('.my-list-icon').find('img').attr('src', src);
+        }
 
+        update(vis.states[data.oid + '.val']);
+        
         // subscribe on updates of value
         if (data.oid) {
             vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
-                var value = (newVal) ? 'open' : 'closed';
-                var src = (newVal) ? 'widgets/material/img/fts_door_open.png' : 'widgets/material/img/fts_door.png';
-                $div.find('.my-list-value').html(_(value));
-                $div.find('.my-list-icon').find('img').attr('src', src);
+                update(newVal);
             });
         }
     },
 	tplMdListWindow: function (widgetID, view, data) {
+        const srcOpen = 'widgets/material/img/fts_window_2w_open.png';
+        const srcClose = 'widgets/material/img/fts_window_2w.png';
+        const valOpen = _('open');
+        const valClose = _('close');
         var $div = $('#' + widgetID);
         // if nothing found => wait
         if (!$div.length) {
@@ -63,19 +71,43 @@ vis.binds.material = {
             }, 100);
         }
 
-        var value = (vis.states[data.oid + '.val']) ? 'open' : 'closed';
-        var src = (vis.states[data.oid + '.val']) ? 'widgets/material/img/fts_window_2w_open.png' : 'widgets/material/img/fts_window_2w.png';
+        function update(state){
+            var value = (state) ? valOpen : valClose;
+            var src = (state) ? srcOpen : srcClose;
+            $div.find('.my-list-value').html(value);
+            $div.find('.my-list-icon').find('img').attr('src', src);
+        }
 
-        $div.find('.my-list-value').html(_(value));
-        $div.find('.my-list-icon').find('img').attr('src', src);
-
+        update(vis.states[data.oid + '.val']);
+        
         // subscribe on updates of value
         if (data.oid) {
             vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
-                var value = (newVal) ? 'open' : 'closed';
-                var src = (newVal) ? 'widgets/material/img/fts_window_2w_open.png' : 'widgets/material/img/fts_window_2w.png';
-                $div.find('.my-list-value').html(_(value));
-                $div.find('.my-list-icon').find('img').attr('src', src);
+                update(newVal);
+            });
+        }
+    },
+
+    tplMdListTemp: function (widgetID, view, data) {
+        var $div = $('#' + widgetID);
+        // if nothing found => wait
+        if (!$div.length) {
+            return setTimeout(function () {
+                vis.binds.material.tplMdListTemp(widgetID, view, data);
+            }, 100);
+        }
+
+        function update(state){
+            var temp = Math.round(parseFloat(state)*10) / 10;
+            $div.find('.my-list-value').html(temp + ' °C');
+        }
+
+        update(vis.states[data.oid + '.val']);
+        
+        // subscribe on updates of value
+        if (data.oid) {
+            vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
+                update(newVal);
             });
         }
     }
