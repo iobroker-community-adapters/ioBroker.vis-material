@@ -22,8 +22,11 @@ https://github.com/Uhula/ioBroker-Material-Design-Style
 
 ## Changelog
 
+### 0.1.0 (2018-01-13)
+- (nisio) Initial version for public testing (includes css from material design styles V1.8)
+
 ### 0.0.1 (2018-01-01)
-- (nisio) initial version
+- (nisio) Initial version for internal testing
 
 ## License
  Copyright (c) 2018-2018 nisiode

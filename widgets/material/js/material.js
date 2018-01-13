@@ -15,12 +15,14 @@ if (vis.editMode) {
 
 // add translations for non-edit mode
 $.extend(true, systemDictionary, {
-    "Instance":  {"en": "Instance", "de": "Instanz", "ru": "?????????"}
+    "Instance":     {"en": "Instance", "de": "Instanz", "ru": "?????????"},
+    "open":         {"en": "open", "de": "offen", "ru": "?????????"},
+    "closed":       {"en": "closed", "de": "geschlossen", "ru": "?????????"},
 });
 
 // this code can be placed directly in material.html
 vis.binds.material = {
-    version: "0.0.1",
+    version: "0.1.0",
     showVersion: function () {
         if (vis.binds.material.version) {
             console.log('Version material: ' + vis.binds.material.version);
@@ -39,7 +41,7 @@ vis.binds.material = {
         var value = (vis.states[data.oid + '.val']) ? 'open' : 'closed';
         var src = (vis.states[data.oid + '.val']) ? 'widgets/material/img/fts_door_open.png' : 'widgets/material/img/fts_door.png';
         
-        $div.find('.my-list-value').html(value);
+        $div.find('.my-list-value').html(_(value));
         $div.find('.my-list-icon').find('img').attr('src', src);
 
         // subscribe on updates of value
@@ -47,7 +49,7 @@ vis.binds.material = {
             vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
                 var value = (newVal) ? 'open' : 'closed';
                 var src = (newVal) ? 'widgets/material/img/fts_door_open.png' : 'widgets/material/img/fts_door.png';
-                $div.find('.my-list-value').html(value);
+                $div.find('.my-list-value').html(_(value));
                 $div.find('.my-list-icon').find('img').attr('src', src);
             });
         }
@@ -64,7 +66,7 @@ vis.binds.material = {
         var value = (vis.states[data.oid + '.val']) ? 'open' : 'closed';
         var src = (vis.states[data.oid + '.val']) ? 'widgets/material/img/fts_window_2w_open.png' : 'widgets/material/img/fts_window_2w.png';
 
-        $div.find('.my-list-value').html(value);
+        $div.find('.my-list-value').html(_(value));
         $div.find('.my-list-icon').find('img').attr('src', src);
 
         // subscribe on updates of value
@@ -72,7 +74,7 @@ vis.binds.material = {
             vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
                 var value = (newVal) ? 'open' : 'closed';
                 var src = (newVal) ? 'widgets/material/img/fts_window_2w_open.png' : 'widgets/material/img/fts_window_2w.png';
-                $div.find('.my-list-value').html(value);
+                $div.find('.my-list-value').html(_(value));
                 $div.find('.my-list-icon').find('img').attr('src', src);
             });
         }
