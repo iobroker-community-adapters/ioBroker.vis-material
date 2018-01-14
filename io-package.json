@@ -1,8 +1,18 @@
 {
     "common": {
         "name": "vis-material",
-        "version": "0.1.0",
-        "news": {     
+        "version": "0.1.1",
+        "news": {  
+            "0.1.1": {
+                "en": "feat: temperature and light widget",
+                "de": "feat: temperature and light widget",
+                "ru": "feat: temperature and light widget"
+            },   
+            "0.1.0": {
+                "en": "feat: include material css from uhula",
+                "de": "feat: include material css from uhula",
+                "ru": "feat: include material css from uhula"
+            },   
             "0.0.1": {
                 "en": "initial adapter",
                 "de": "Initiale Version",

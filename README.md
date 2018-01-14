@@ -22,6 +22,9 @@ https://github.com/Uhula/ioBroker-Material-Design-Style
 
 ## Changelog
 
+### 0.1.1 (2018-01-14)
+- (nisio) feat: temperature and light widget
+
 ### 0.1.0 (2018-01-13)
 - (nisio) Initial version for public testing (includes css from material design styles V1.8)
 

@@ -1,7 +1,7 @@
 /*
     ioBroker.vis material Widget-Set
-    version: "0.0.1"
-    Copyright 10.2015-2016 nisiode<email@mail.com>
+    version: "0.1.1"
+    Copyright 2018 nisiode<email@mail.com>
 */
 "use strict";
 
