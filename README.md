@@ -22,7 +22,7 @@ https://github.com/Uhula/ioBroker-Material-Design-Style
 
 ## Changelog
 
-### 0.1.2 (2018-01-21)
+### 0.1.3 (2018-01-21)
 - (nisio) feat: new dimmer widget
 
 ### 0.1.2 (2018-01-20)
