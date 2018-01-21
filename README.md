@@ -22,6 +22,9 @@ https://github.com/Uhula/ioBroker-Material-Design-Style
 
 ## Changelog
 
+### 0.1.2 (2018-01-20)
+- (nisio) feat: switch added to light widget
+
 ### 0.1.1 (2018-01-14)
 - (nisio) feat: temperature and light widget
 

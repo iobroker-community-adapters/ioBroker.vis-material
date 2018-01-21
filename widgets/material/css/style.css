@@ -1,24 +1,34 @@
-.my-list{
+.md-list{
     width: 100%;
     height: 56px;
 }
-.my-list-icon{
+.md-list-icon{
     float: left;
     width: 72px;
+    height: 56px;
 }
-.my-list-icon img{
+.md-list-icon img{
     margin-left: 8px;
     width: 48px;
     height: 48px; 
 }
 
-.my-list-desc{
+.md-list-desc{
     float: left; 
     width: calc(100% - 72px - 100px - 16px);
+    height: 56px;
+    margin-top: 10px;
 }
 
-.my-list-value{
+.md-list-value{
     float: left;
     width: 100px !important;
     text-align: right;
+    margin-top: 16px;
+}
+
+.md-list-value .mdui-switch{
+    width: 48px;
+    height: 24px;
+    margin-left: 52px;
 }

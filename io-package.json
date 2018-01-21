@@ -1,13 +1,18 @@
 {
     "common": {
         "name": "vis-material",
-        "version": "0.1.1",
+        "version": "0.1.2",
         "news": {  
+            "0.1.2": {
+                "en": "feat: switch added to light widget",
+                "de": "feat: switch added to light widget",
+                "ru": "feat: switch added to light widget"
+            },
             "0.1.1": {
                 "en": "feat: temperature and light widget",
                 "de": "feat: temperature and light widget",
                 "ru": "feat: temperature and light widget"
-            },   
+            },
             "0.1.0": {
                 "en": "feat: include material css from uhula",
                 "de": "feat: include material css from uhula",

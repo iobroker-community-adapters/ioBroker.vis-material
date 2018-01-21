@@ -1,7 +1,7 @@
 /*
     ioBroker.vis material Widget-Set
-    version: "0.1.1"
-    Copyright 2018 nisiode<email@mail.com>
+    version: "0.1.2"
+    Copyright 2018 nisiode<nisio.air@mail.com>
 */
 "use strict";
 
@@ -9,7 +9,7 @@
 if (vis.editMode) {
     $.extend(true, systemDictionary, {
         "title":          {"en": "Title",       "de": "Titel",  "ru": "???"},
-        "subtitle":         {"en": "Subtitle",      "de": "Untertitel",   "ru": "???"}
+        "subtitle":       {"en": "Subtitle",      "de": "Untertitel",   "ru": "???"}
     });
 }
 
@@ -17,14 +17,13 @@ if (vis.editMode) {
 $.extend(true, systemDictionary, {
     "Instance":     {"en": "Instance", "de": "Instanz", "ru": "?????????"},
     "open":         {"en": "open", "de": "offen", "ru": "?????????"},
-    "close":        {"en": "close", "de": "geschlossen", "ru": "?????????"},
+    "closed":       {"en": "closed", "de": "geschlossen", "ru": "?????????"},
     "on":           {"en": "on", "de": "an", "ru": "?????????"},
     "off":          {"en": "off", "de": "aus", "ru": "?????????"}
 });
 
-// this code can be placed directly in material.html
 vis.binds.material = {
-    version: "0.1.0",
+    version: "0.1.2",
     showVersion: function () {
         if (vis.binds.material.version) {
             console.log('Version material: ' + vis.binds.material.version);
@@ -33,9 +32,10 @@ vis.binds.material = {
     },
 	tplMdListDoor: function (widgetID, view, data) {
         const srcOpen = 'widgets/material/img/fts_door_open.png';
-        const srcClose = 'widgets/material/img/fts_door.png';
+        const srcClosed = 'widgets/material/img/fts_door.png';
         const valOpen = _('open');
-        const valClose = _('close');
+        const valClosed = _('closed');
+
         var $div = $('#' + widgetID);
         // if nothing found => wait
         if (!$div.length) {
@@ -45,27 +45,29 @@ vis.binds.material = {
         }
 
         function update(state){
-            var value = (state) ? valOpen : valClose;
-            var src = (state) ? srcOpen : srcClose;
-            $div.find('.my-list-value').html(value);
-            $div.find('.my-list-icon').find('img').attr('src', src);
+            var value = (state) ? valOpen : valClosed;
+            var src = (state) ? srcOpen : srcClosed;
+            $div.find('.md-list-value').html(value);
+            $div.find('.md-list-icon').find('img').attr('src', src);
         }
 
-        update(vis.states[data.oid + '.val']);
-        
-        // subscribe on updates of value
         if (data.oid) {
+            // subscribe on updates of value
             vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
                 update(newVal);
             });
+
+            // set current value
+            update(vis.states[data.oid + '.val']);
         }
     },
 	tplMdListWindow: function (widgetID, view, data) {
         const srcOpen = 'widgets/material/img/fts_window_2w_open.png';
-        const srcClose = 'widgets/material/img/fts_window_2w.png';
+        const srcClosed = 'widgets/material/img/fts_window_2w.png';
         const valOpen = _('open');
-        const valClose = _('close');
+        const valClosed = _('closed');
         var $div = $('#' + widgetID);
+
         // if nothing found => wait
         if (!$div.length) {
             return setTimeout(function () {
@@ -74,50 +76,61 @@ vis.binds.material = {
         }
 
         function update(state){
-            var value = (state) ? valOpen : valClose;
-            var src = (state) ? srcOpen : srcClose;
-            $div.find('.my-list-value').html(value);
-            $div.find('.my-list-icon').find('img').attr('src', src);
-        }
-
-        update(vis.states[data.oid + '.val']);
+            var value = (state) ? valOpen : valClosed;
+            var src = (state) ? srcOpen : srcClosed;
+            $div.find('.md-list-value').html(value);
+            $div.find('.md-list-icon').find('img').attr('src', src);
+        }    
         
-        // subscribe on updates of value
         if (data.oid) {
+            // subscribe on updates of value
             vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
                 update(newVal);
             });
+
+            // set current value
+            update(vis.states[data.oid + '.val']);
         }
     },
     tplMdListTemp: function (widgetID, view, data) {
         var $div = $('#' + widgetID);
+
         // if nothing found => wait
         if (!$div.length) {
             return setTimeout(function () {
                 vis.binds.material.tplMdListTemp(widgetID, view, data);
             }, 100);
         }
-
+        
+        // grey out the value in case the last change is more than 24h ago
+        var curTime = new Date().getTime();
+        var lcTime = vis.states[data.oid + '.lc'];
+        var seconds = (curTime - lcTime) / 1000;
+        if(seconds > 86400){ 
+            $div.find('.md-list-value').css('opacity', '0.5');
+        }
+        
         function update(state){
-            var temp = Math.round(parseFloat(state)*10) / 10;
-            $div.find('.my-list-value').html(temp + ' °C');
+            if(typeof state === 'number'){
+                $div.find('.md-list-value').html(state.toFixed(1) + ' °C');
+            }
         }
 
-        update(vis.states[data.oid + '.val']);
-        
-        // subscribe on updates of value
         if (data.oid) {
+            // subscribe on updates of value
             vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
                 update(newVal);
             });
+
+            // set current value
+            update(vis.states[data.oid + '.val']);
         }
     },
 	tplMdListLight: function (widgetID, view, data) {
         const srcOff = 'widgets/material/img/light_light_dim_00.png';
         const srcOn = 'widgets/material/img/light_light_dim_100.png';
-        const valOn = _('on');
-        const valOff = _('off');
         var $div = $('#' + widgetID);
+
         // if nothing found => wait
         if (!$div.length) {
             return setTimeout(function () {
@@ -126,33 +139,28 @@ vis.binds.material = {
         }
 
         function update(state){
-            var value;
-            var src;
-
-            if(typeof state === 'number'){
-                if(state == 0){
-                    value = valOff;
-                    src = srcOff;
-                }else{
-                    value = state + ' %';
-                    var dim = Math.floor(parseFloat(state)/10)*10;
-                    src = 'widgets/material/img/light_light_dim_' + dim + '.png';
-                }
-            }else{
-                value = (state) ? valOn : valOff;
-                src = (state) ? srcOn : srcOff;
-            }
-            $div.find('.my-list-value').html(value);
-            $div.find('.my-list-icon').find('img').attr('src', src);
+            var src = (state) ? srcOn : srcOff;
+            var $tmp = $('#' + widgetID + '_checkbox');
+            $tmp.prop('checked', state);
+            $div.find('.md-list-icon').find('img').attr('src', src);
         }
 
-        update(vis.states[data.oid + '.val']);
+        if (!vis.editMode) {
+            var $this = $('#' + widgetID + '_checkbox');
+            $this.change(function () {
+                var $this_ = $(this);
+                vis.setValue($this_.data('oid'), $this_.prop('checked'));
+            });
+        }
         
-        // subscribe on updates of value
         if (data.oid) {
+            // subscribe on updates of value
             vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
                 update(newVal);
             });
+
+            // set current value
+            update(vis.states[data.oid + '.val']);
         }
     }
 };

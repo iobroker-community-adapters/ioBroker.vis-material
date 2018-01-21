@@ -1,7 +1,7 @@
 {
   "name": "iobroker.vis-material",
   "description": "material widgets for ioBroker.vis",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": {
     "name": "nisiode",
     "email": "nisio.air@gmail.com"
