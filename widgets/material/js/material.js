@@ -1,7 +1,8 @@
 /*
     ioBroker.vis material Widget-Set
-    version: "0.1.3"
+    version: "0.1.4"
     Copyright 2018 nisiode<nisio.air@mail.com>
+    forked by Pix 7/2018
 */
 "use strict";
 
@@ -23,7 +24,7 @@ $.extend(true, systemDictionary, {
 });
 
 vis.binds.material = {
-    version: "0.1.3",
+    version: "0.1.4",
     showVersion: function () {
         if (vis.binds.material.version) {
             console.log('Version material: ' + vis.binds.material.version);
@@ -113,6 +114,40 @@ vis.binds.material = {
         function update(state){
             if(typeof state === 'number'){
                 $div.find('.md-list-value').html(state.toFixed(1) + ' °C');
+            }
+        }
+
+        if (data.oid) {
+            // subscribe on updates of value
+            vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
+                update(newVal);
+            });
+
+            // set current value
+            update(vis.states[data.oid + '.val']);
+        }
+    },
+    tplMdListHumid: function (widgetID, view, data) {
+        var $div = $('#' + widgetID);
+
+        // if nothing found => wait
+        if (!$div.length) {
+            return setTimeout(function () {
+                vis.binds.material.tplMdListHumid(widgetID, view, data);
+            }, 100);
+        }
+        
+        // grey out the value in case the last change is more than 24h ago
+        var curTime = new Date().getTime();
+        var lcTime = vis.states[data.oid + '.lc'];
+        var seconds = (curTime - lcTime) / 1000;
+        if(seconds > 86400){ 
+            $div.find('.md-list-value').css('opacity', '0.5');
+        }
+        
+        function update(state){
+            if(typeof state === 'number'){
+                $div.find('.md-list-value').html(state.toFixed(1) + ' %');
             }
         }
 
