@@ -2,7 +2,7 @@
     ioBroker.vis material Widget-Set
     version: "0.1.4"
     Copyright 2018 nisiode<nisio.air@mail.com>
-    forked by Pix 7/2018
+    forked by Pix 7/2018 (humidity, shutter)
 */
 "use strict";
 
@@ -18,13 +18,14 @@ if (vis.editMode) {
 $.extend(true, systemDictionary, {
     "Instance":     {"en": "Instance", "de": "Instanz", "ru": "?????????"},
     "open":         {"en": "open", "de": "offen", "ru": "?????????"},
+    "tilted":       {"en": "tilted", "de": "gekippt", "ru": "?????????"},
     "closed":       {"en": "closed", "de": "geschlossen", "ru": "?????????"},
     "on":           {"en": "on", "de": "an", "ru": "?????????"},
     "off":          {"en": "off", "de": "aus", "ru": "?????????"}
 });
 
 vis.binds.material = {
-    version: "0.1.4",
+    version: "0.1.5",
     showVersion: function () {
         if (vis.binds.material.version) {
             console.log('Version material: ' + vis.binds.material.version);
@@ -212,6 +213,41 @@ vis.binds.material = {
 
         function update(state){
             var src = 'widgets/material/img/light_light_dim_' + Math.ceil(state/10) + '0.png';
+            $div.find('.md-list-icon').find('img').attr('src', src);
+        }
+
+        /* if (!vis.editMode) {
+            var $this = $('#' + widgetID + '_slider');
+            $this.change(function () {
+                var $this_ = $(this);
+                vis.setValue($this_.data('oid'), $this_.prop('checked'));
+            });
+        } */
+        
+        if (data.oid) {
+            // subscribe on updates of value
+            vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
+                update(newVal);
+            });
+
+            // set current value
+            update(vis.states[data.oid + '.val']);
+        }
+    },
+	tplMdListShutter: function (widgetID, view, data) {
+        const srcOff = 'widgets/material/img/fts_shutter_00.png';
+        const srcOn = 'widgets/material/img/fts_shutter_100.png';
+        var $div = $('#' + widgetID);
+
+        // if nothing found => wait
+        if (!$div.length) {
+            return setTimeout(function () {
+                vis.binds.material.tplMdListShutter(widgetID, view, data);
+            }, 100);
+        }
+
+        function update(state){
+            var src = 'widgets/material/img/fts_shutter_' + Math.ceil(state/10) + '0.png';
             $div.find('.md-list-icon').find('img').attr('src', src);
         }
 
