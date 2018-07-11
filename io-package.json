@@ -1,9 +1,19 @@
 {
     "common": {
         "name": "vis-material",
-        "version": "0.1.3",
+        "version": "0.1.5",
         "news": {  
-            "0.1.2": {
+            "0.1.5": {
+                "en": "feat: new window shutter widget",
+                "de": "feat: neues Fenster-Rollladen widget",
+                "ru": "feat: new window shutter widget"
+            },
+            "0.1.4": {
+                "en": "feat: new humidity widget",
+                "de": "feat: neues Luftfeuchte widget",
+                "ru": "feat: new humidity widget"
+            },
+            "0.1.3": {
                 "en": "feat: new dimmer widget",
                 "de": "feat: new dimmer widget",
                 "ru": "feat: new dimmer widget"

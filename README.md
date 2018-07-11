@@ -22,6 +22,12 @@ https://github.com/Uhula/ioBroker-Material-Design-Style
 
 ## Changelog
 
+### 0.1.5 (2018-07-11)
+- (pix) feat: new window shutter widget
+
+### 0.1.4 (2018-07-10)
+- (pix) feat: new humidity widget
+
 ### 0.1.3 (2018-01-21)
 - (nisio) feat: new dimmer widget
 
