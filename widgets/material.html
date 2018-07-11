@@ -1,7 +1,9 @@
 <!--
     ioBroker.vis material Widget-Set
-    version: "0.1.3"
+    version: "0.1.5"
     Copyright 2018 nisiode<nisio.air@mail.com>
+    forked by Pix (7/2018) (Humidty, shutter)
+
 -->
 
 <!-- here you can include so many css as you want -->
@@ -77,7 +79,7 @@
         data-vis-attrs="oid/id;title/text;subtitle/text;"
         data-vis-set="material"
         data-vis-type="val"
-        data-vis-name="ListTemp">
+        data-vis-name="ListTemperature">
 		<div class="vis-widget <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>" >
 			<div class="vis-widget-body" >
 				<div class="md-list-icon">
@@ -164,6 +166,40 @@
 		<% vis.binds.material.tplMdListLightDim(this.data.wid, this.view, this.data);  %>
 </script>
 
+<script id="tplMaListShutter"
+        type="text/ejs"
+        class="vis-tpl"
+        data-vis-prev='<div id="prev_tplMaListShutter" style="position: relative; text-align: initial;padding: 4px ">
+				<div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121" > 
+					<img src="widgets/material/img/fts_shutter_100.png" style="width: 100px; height: 100px;"></div></div>'
+        data-vis-attrs="oid/id;title/text;subtitle/text;"
+        data-vis-set="material"
+        data-vis-type="val"
+        data-vis-name="ListWindowShutter">
+		<div class="vis-widget <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>" >
+			<div class="vis-widget-body" >
+				<div class="md-list-icon">
+					<img src="widgets/material/img/fts_shutter_100.png">
+				</div>
+				<div class="md-list-desc">
+					<div class="md-list-title mdui-title" >
+						<%= this.data.attr('title') %>
+					</div>
+					<div class="md-list-subtitle mdui-subtitle">
+						<%= this.data.attr('subtitle') %>
+					</div>
+				</div>
+				<div class="md-list-value" >
+					<div class="mdui-slider" >
+						<div class="sliderJQUI" id="<%= this.data.attr('wid') %>_slider" data-oid="<%= this.data.attr('oid') %>" data-oid2="<%= this.data.attr('oid-2') %>" data-oid-working="<%= this.data.attr('oid-working') %>"  data-oid2-working="<%= this.data.attr('oid-2-working') %>"<%= (el) -> vis.binds.jqueryui.slider(el, {min:0,max:100,step:1,inverted:false}) %> /></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<% vis.binds.material.tplMdListShutter(this.data.wid, this.view, this.data);  %>
+</script>
+
+
 <script id="tplMaListHumid"
         type="text/ejs"
         class="vis-tpl"
@@ -173,7 +209,7 @@
         data-vis-attrs="oid/id;title/text;subtitle/text;"
         data-vis-set="material"
         data-vis-type="val"
-        data-vis-name="ListHumid">
+        data-vis-name="ListHumidity">
 		<div class="vis-widget <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>" >
 			<div class="vis-widget-body" >
 				<div class="md-list-icon">
