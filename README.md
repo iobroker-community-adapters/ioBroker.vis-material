@@ -1,5 +1,5 @@
 ![Logo](admin/material.png)
-ioBroker.vis-material
+# ioBroker.vis-material
 ============
 
 [![NPM version](http://img.shields.io/npm/v/iobroker.vis-material.svg)](https://www.npmjs.com/package/iobroker.vis-material)
