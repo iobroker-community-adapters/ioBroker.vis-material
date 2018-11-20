@@ -9,19 +9,19 @@
 // add translations for edit mode
 if (vis.editMode) {
     $.extend(true, systemDictionary, {
-        "title":          {"en": "Title",       "de": "Titel",  "ru": "???"},
-        "subtitle":       {"en": "Subtitle",      "de": "Untertitel",   "ru": "???"}
+        "title":          {"en": "Title",       "de": "Titel",  "ru": "Заголовок"},
+        "subtitle":       {"en": "Subtitle",      "de": "Untertitel",   "ru": "Подзаголовок"}
     });
 }
 
 // add translations for non-edit mode
 $.extend(true, systemDictionary, {
-    "Instance":     {"en": "Instance", "de": "Instanz", "ru": "?????????"},
-    "open":         {"en": "open", "de": "offen", "ru": "?????????"},
-    "tilted":       {"en": "tilted", "de": "gekippt", "ru": "?????????"},
-    "closed":       {"en": "closed", "de": "geschlossen", "ru": "?????????"},
-    "on":           {"en": "on", "de": "an", "ru": "?????????"},
-    "off":          {"en": "off", "de": "aus", "ru": "?????????"}
+    "Instance":     {"en": "Instance", "de": "Instanz", "ru": "Инстанция"},
+    "open":         {"en": "open", "de": "offen", "ru": "открыто"},
+    "tilted":       {"en": "tilted", "de": "gekippt", "ru": "приоткрыто"},
+    "closed":       {"en": "closed", "de": "geschlossen", "ru": "закрыто"},
+    "on":           {"en": "on", "de": "an", "ru": "вкл"},
+    "off":          {"en": "off", "de": "aus", "ru": "выкл"}
 });
 
 vis.binds.material = {
