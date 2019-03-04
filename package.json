@@ -38,8 +38,7 @@
     "grunt-jscs": "^3.0.1",
     "grunt-replace": "^1.0.1",
     "mocha": "^4.1.0",
-    "chai": "^4.1.2",
-    "@iobroker/adapter-core": "^1.0.3"
+    "chai": "^4.1.2"
   },
   "bugs": {
     "url": "https://github.com/nisiode/ioBroker.vis-material/issues"
@@ -49,5 +48,8 @@
   "scripts": {
     "test": "node node_modules/mocha/bin/mocha --exit"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@iobroker/adapter-core": "^1.0.3"
+  }
 }
