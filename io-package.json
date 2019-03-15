@@ -1,78 +1,149 @@
 {
     "common": {
         "name": "vis-material",
-        "version": "0.1.5",
-        "news": {  
+        "version": "0.1.6",
+        "news": {
             "0.1.5": {
                 "en": "feat: new window shutter widget",
-                "de": "feat: neues Fenster-Rollladen widget",
-                "ru": "feat: new window shutter widget"
+                "de": "feat: Neues Fensterfenster-Widget",
+                "ru": "feat: новый виджет окна",
+                "pt": "feat: novo widget de janela do obturador",
+                "nl": "feat: nieuw venster sluiter widget",
+                "fr": "feat: nouvelle fenêtre volet d'obturation",
+                "it": "prodezza: nuovo widget dell'otturatore della finestra",
+                "es": "hazaña: nuevo widget de obturador de ventana",
+                "pl": "feat: nowy widget okienka",
+                "zh-cn": "壮举：新窗口快门小部件"
             },
             "0.1.4": {
                 "en": "feat: new humidity widget",
-                "de": "feat: neues Luftfeuchte widget",
-                "ru": "feat: new humidity widget"
+                "de": "feat: neues Feuchtewidget",
+                "ru": "feat: новый виджет влажности",
+                "pt": "feat: novo widget de umidade",
+                "nl": "feat: nieuwe vochtigheidswidget",
+                "fr": "feat: nouveau widget d'humidité",
+                "it": "prodezza: nuovo widget di umidità",
+                "es": "hazaña: nuevo widget de humedad",
+                "pl": "feat: nowy widget wilgotności",
+                "zh-cn": "壮举：新的湿度小部件"
             },
             "0.1.3": {
                 "en": "feat: new dimmer widget",
-                "de": "feat: new dimmer widget",
-                "ru": "feat: new dimmer widget"
+                "de": "feat: neues Dimmer-Widget",
+                "ru": "feat: новый виджет диммера",
+                "pt": "feat: new dimmer widget",
+                "nl": "feat: nieuwe dimmer-widget",
+                "fr": "feat: nouveau widget dimmer",
+                "it": "feat: nuovo widget dimmer",
+                "es": "hazaña: nuevo widget dimmer",
+                "pl": "feat: nowy widget dimmera",
+                "zh-cn": "壮举：新的调光器小部件"
             },
             "0.1.2": {
                 "en": "feat: switch added to light widget",
-                "de": "feat: switch added to light widget",
-                "ru": "feat: switch added to light widget"
+                "de": "feat: Schalter zum Licht-Widget hinzugefügt",
+                "ru": "feat: переключатель добавлен в легкий виджет",
+                "pt": "feat: switch adicionado ao widget light",
+                "nl": "feat: switch toegevoegd aan light widget",
+                "fr": "feat: switch ajouté au widget light",
+                "it": "impresa: interruttore aggiunto al widget di luce",
+                "es": "hazaña: interruptor añadido al widget de luz",
+                "pl": "feat: przełącznik dodany do widżetu światła",
+                "zh-cn": "feat：开关添加到灯光小部件"
             },
             "0.1.1": {
                 "en": "feat: temperature and light widget",
-                "de": "feat: temperature and light widget",
-                "ru": "feat: temperature and light widget"
+                "de": "Leistung: Temperatur und Licht Widget",
+                "ru": "подвиг: виджет температуры и света",
+                "pt": "feat: temperatura e luz widget",
+                "nl": "feat: temperatuur en licht widget",
+                "fr": "feat: température et lumière widget",
+                "it": "prodezza: temperatura e widget di luce",
+                "es": "hazaña: widget de temperatura y luz",
+                "pl": "feat: widget temperatury i światła",
+                "zh-cn": "壮举：温度和灯光小部件"
             },
             "0.1.0": {
                 "en": "feat: include material css from uhula",
-                "de": "feat: include material css from uhula",
-                "ru": "feat: include material css from uhula"
-            },   
+                "de": "feat: Material css aus Uhula enthalten",
+                "ru": "feat: включить материал css из ухула",
+                "pt": "façanha: incluir material css de uhula",
+                "nl": "feat: include css van uhula",
+                "fr": "exploit: inclure le css matériel de uhula",
+                "it": "impresa: include materiale css da uhula",
+                "es": "hazaña: incluye material css de uhula",
+                "pl": "feat: dołącz materiał css z uhuli",
+                "zh-cn": "壮举：包括来自uhula的材料css"
+            },
             "0.0.1": {
                 "en": "initial adapter",
-                "de": "Initiale Version",
-                "ru": "Первоначальный адаптер",
-                "pt": "Versão inicial",
-                "fr": "Version initiale",
-                "nl": "Eerste release"
+                "de": "Anfangsadapter",
+                "ru": "начальный адаптер",
+                "pt": "adaptador inicial",
+                "nl": "eerste adapter",
+                "fr": "adaptateur initial",
+                "it": "adattatore iniziale",
+                "es": "adaptador inicial",
+                "pl": "początkowy adapter",
+                "zh-cn": "初始适配器"
             }
         },
-        "title": "material widgets",
+        "title": "Material widgets",
+        "titleLang": {
+            "en": "Material widgets",
+            "de": "Material Widgets",
+            "ru": "Виджеты материалов",
+            "pt": "Widgets materiais",
+            "nl": "Materiële widgets",
+            "fr": "Widgets matériels",
+            "it": "Widget materiali",
+            "es": "Material de widgets",
+            "pl": "Widgety materiałowe",
+            "zh-cn": "材料小部件"
+        },
         "desc": {
             "en": "material Widgets for ioBroker.vis",
-            "de": "material Widgets für ioBroker.vis",
-            "ru": "material Widgets для ioBroker.vis",
-            "pt": "molde de Widgets para o ioBroker.vis",
-            "fr": "modèle de Widgets pour ioBroker.vis",
-            "nl": "sjabloon widgets voor ioBroker.vis"
+            "de": "Material Widgets für ioBroker.vis",
+            "ru": "Виджеты материалов для ioBroker.vis",
+            "pt": "Widgets de material para ioBroker.vis",
+            "nl": "materiaal Widgets voor ioBroker.vis",
+            "fr": "Widgets matériels pour ioBroker.vis",
+            "it": "Widget materiali per ioBroker.vis",
+            "es": "Material de los widgets para ioBroker.vis.",
+            "pl": "Widgety materiałowe dla ioBroker.vis",
+            "zh-cn": "ioBroker.vis的材质小部件"
         },
         "platform": "Javascript/Node.js",
         "icon": "material.png",
         "enabled": true,
         "mode": "once",
-        "extIcon": "https://raw.githubusercontent.com/nisiode/ioBroker.vis-material/master/admin/material.png",
-        "keywords": ["material", "vis", "GUI", "graphical", "scada"],
-        "readme": "https://github.com/nisiode/ioBroker.vis-material/blob/master/README.md",
+        "extIcon": "https://raw.githubusercontent.com/iobroker-community-adapters/ioBroker.vis-material/master/admin/material.png",
+        "keywords": [
+            "material",
+            "vis",
+            "GUI",
+            "graphical",
+            "scada"
+        ],
+        "readme": "https://github.com/iobroker-community-adapters/ioBroker.vis-material/blob/master/README.md",
         "authors": [
             "nisiode <nisio.air@gmail.com>"
         ],
         "localLink": "%web_protocol%://%ip%:%web_port%/vis/edit.html",
         "license": "MIT",
-        "dependencies": ["vis"],
+        "dependencies": [
+            "vis"
+        ],
         "onlyWWW": true,
         "noConfig": true,
         "singleton": true,
         "type": "visualization-widgets",
-        "restartAdapters": ["vis"]
+        "restartAdapters": [
+            "vis"
+        ]
     },
     "native": {
         "dependencies": []
     },
-    "instanceObjects": [
-    ]
+    "instanceObjects": []
 }
