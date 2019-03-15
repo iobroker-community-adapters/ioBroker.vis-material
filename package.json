@@ -27,17 +27,17 @@
     "material vis"
   ],
   "devDependencies": {
-    "grunt": "^0.4.5",
+    "grunt": "^1.0.1",
     "grunt-cli": "^1.2.0",
-    "grunt-contrib-clean": "^0.6.0",
-    "grunt-contrib-compress": "^0.13.0",
-    "grunt-contrib-copy": "^0.8.0",
-    "grunt-contrib-jshint": "^0.11.3",
-    "grunt-exec": "^0.4.6",
-    "grunt-http": "^1.6.0",
-    "grunt-jscs": "^2.8.0",
-    "grunt-replace": "^0.9.3",
-	"mocha": "^4.1.0",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-compress": "^1.4.3",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-exec": "^3.0.0",
+    "grunt-http": "^2.2.0",
+    "grunt-jscs": "^3.0.1",
+    "grunt-replace": "^1.0.1",
+    "mocha": "^4.1.0",
     "chai": "^4.1.2"
   },
   "bugs": {
@@ -48,5 +48,8 @@
   "scripts": {
     "test": "node node_modules/mocha/bin/mocha --exit"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@iobroker/adapter-core": "^1.0.3"
+  }
 }
