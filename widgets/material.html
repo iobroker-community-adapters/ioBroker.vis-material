@@ -158,6 +158,10 @@
 				<div class="md-list-value mdui-value"></div>
 			</div>
 		</div>
+		<div class="vis-widget <%== this.data.attr('class') %>" id="<%= this.data.attr('wid')  %>" >
+			<div class="vis-widget-body " style="opacity: 0.08;" >
+			</div>
+		</div>
 		<% vis.binds.material.tplMdListHumid(this.data.wid, this.view, this.data);  %>
 </script>
 <script id="tplMaListOccupancy"
