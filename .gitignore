@@ -1,3 +1,5 @@
 /node_modules
 /nbproject
 widgets/eins.html
+widgets/widget.html
+.vscode/launch.json
