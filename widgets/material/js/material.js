@@ -41,7 +41,7 @@ $.extend(true, systemDictionary, {
     },
     "closed": {
         "en": "closed",
-        "de": "geschlossen",
+        "de": "zu",
         "ru": "закрыто"
     },
     "on": {
@@ -53,11 +53,21 @@ $.extend(true, systemDictionary, {
         "en": "off",
         "de": "aus",
         "ru": "выкл"
+    },
+    "motion": {
+        "en": "motion",
+        "de": "Bewegung",
+        "ru": "motion",
+    "nomotion": {
+        "en": "no motion",
+        "de": "Nein",
+        "ru": "na"
+    }
     }
 });
 
 vis.binds.material = {
-    version: "0.1.5",
+    version: "0.1.6",
     showVersion: function () {
         if (vis.binds.material.version) {
             console.log('Version material: ' + vis.binds.material.version);
@@ -195,6 +205,11 @@ vis.binds.material = {
         }
     },
     tplMdListOccupancy: function (widgetID, view, data) {
+        const srcMotion = 'widgets/material/img/motion.png';
+        const srcNoMotion = 'widgets/material/img/nomotion.png';
+        const valMotion = _('motion');
+        const valNoMotion = _('nomotion');
+
         var $div = $('#' + widgetID);
 
         // if nothing found => wait
@@ -213,11 +228,11 @@ vis.binds.material = {
         }
 
         function update(state) {
-            if (state) {
-                $div.find('.md-list-value').html('Bewegung');
-            } else {
-                $div.find('.md-list-value').html('Nein');
-            }
+            var value = (state) ? valMotion : valNoMotion;
+            var src = (state) ? srcMotion : srcNoMotion;
+            $div.find('.md-list-value').html(value);
+            $div.find('.md-list-icon').find('img').attr('src', src);
+           
         }
 
         if (data.oid) {
