@@ -181,6 +181,7 @@ vis.binds.material = {
             }, 100);
         }
 
+        console.info(data.oid);
         // grey out the value in case the last change is more than 24h ago
         var curTime = new Date().getTime();
         var lcTime = vis.states[data.oid + '.lc'];
@@ -201,7 +202,7 @@ vis.binds.material = {
                 update(newVal);
             });
 
-            // set current value mdi-motion-sensor F0D91 <i class=‘mdui-icon‘>&#xF0EF4;</i>
+            // set current value 
             update(vis.states[data.oid + '.val']);
         }
     },
