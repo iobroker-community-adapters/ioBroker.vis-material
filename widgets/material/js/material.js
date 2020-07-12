@@ -319,8 +319,8 @@ vis.binds.material = {
         }
     },
     tplMdListShutter: function (widgetID, view, data) {
-        const srcOff = 'widgets/material/img/fts_shutter_00.png';
-        const srcOn = 'widgets/material/img/fts_shutter_100.png';
+        const srcON = 'widgets/material/img/fts_shutter_00.png';
+        const srcOff = 'widgets/material/img/fts_shutter_100.png';
         var $div = $('#' + widgetID);
 
         // if nothing found => wait
@@ -331,7 +331,7 @@ vis.binds.material = {
         }
 
         function update(state) {
-            var src = 'widgets/material/img/fts_shutter_' + Math.ceil(state / 10) + '0.png';
+            var src = 'widgets/material/img/fts_shutter_' + 100-Math.ceil(state / 10) + '0.png';
             $div.find('.md-list-icon').find('img').attr('src', src);
         }
 
