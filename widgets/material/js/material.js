@@ -158,6 +158,40 @@ vis.binds.material = {
                 update(newVal);
             });
 
+            // set current value mdi-motion-sensor F0D91 <i class=‘mdui-icon‘>&#xF0EF4;</i>
+            update(vis.states[data.oid + '.val']);
+        }
+    },
+    tplMdListOccupancy: function (widgetID, view, data) {
+        var $div = $('#' + widgetID);
+
+        // if nothing found => wait
+        if (!$div.length) {
+            return setTimeout(function () {
+                vis.binds.material.tplMdListOccupancy(widgetID, view, data);
+            }, 100);
+        }
+        
+        // grey out the value in case the last change is more than 24h ago
+        var curTime = new Date().getTime();
+        var lcTime = vis.states[data.oid + '.lc'];
+        var seconds = (curTime - lcTime) / 1000;
+        if(seconds > 86400){ 
+            $div.find('.md-list-value').css('opacity', '0.5');
+        }
+        
+        function update(state){
+            if(typeof state === 'number'){
+                $div.find('.md-list-value').html(state.toFixed(1) + ' %');
+            }
+        }
+
+        if (data.oid) {
+            // subscribe on updates of value
+            vis.states.bind(data.oid + '.val', function (e, newVal, oldVal) {
+                update(newVal);
+            });
+
             // set current value
             update(vis.states[data.oid + '.val']);
         }
