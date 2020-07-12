@@ -21,6 +21,7 @@ https://github.com/Uhula/ioBroker-Material-Design-Style
 
 
 ## Changelog
+
 ### 0.1.6 (2020-07-12)
 - (EdgarM73) feat: new Occupancy widget
 
