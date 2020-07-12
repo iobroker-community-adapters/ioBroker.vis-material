@@ -11,10 +11,10 @@
     "pix <pix---@hotmail.com>",
     "EdgarM73 <edgar.miller@gmail.com>"
   ],
-  "homepage": "https://github.com/nisiode/ioBroker.vis-material.git",
+  "homepage": "http://gitea:3000/erdal/ioBroker.vis-material",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nisiode/ioBroker.vis-material.git"
+    "url": "http://gitea:3000/erdal/ioBroker.vis-material"
   },
   "licenses": [
     {
@@ -42,7 +42,7 @@
     "chai": "^4.1.2"
   },
   "bugs": {
-    "url": "https://github.com/nisiode/ioBroker.vis-material/issues"
+    "url": "http://gitea:3000/erdal/ioBroker.vis-material/issues"
   },
   "readmeFilename": "README.md",
   "main": "widgets/material.html",
