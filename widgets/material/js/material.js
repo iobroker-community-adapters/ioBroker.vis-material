@@ -206,7 +206,7 @@ vis.binds.material = {
     },
     tplMdListOccupancy: function (widgetID, view, data) {
         const srcMotion = 'widgets/material/img/motion.png';
-        const srcNoMotion = 'widgets/material/img/nomotion.png';
+        const srcNoMotion = 'widgets/material/img/no-motion.png';
         const valMotion = _('motion');
         const valNoMotion = _('nomotion');
 
