@@ -181,9 +181,13 @@ vis.binds.material = {
         }
         
         function update(state){
-            if(typeof state === 'number'){
-                $div.find('.md-list-value').html(state.toFixed(1) + ' %');
+            if( state){
+                $div.find('.md-list-value').html('Bewegung');
             }
+            else 
+           {
+            $div.find('.md-list-value').html('Keine Bewegung');
+           } 
         }
 
         if (data.oid) {
