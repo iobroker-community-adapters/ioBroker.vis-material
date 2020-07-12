@@ -12,17 +12,12 @@
 <!-- here you can include so many js-files as you want -->
 <script type="text/javascript" src="widgets/material/js/material.js"></script>
 
-<script id="tplMaListDoor"
-        type="text/ejs"
-        class="vis-tpl"
-        data-vis-prev='<div id="prev_tplMaListWindow" style="position: relative; text-align: initial;padding: 4px ">
+<script id="tplMaListDoor" type="text/ejs" class="vis-tpl" data-vis-prev='<div id="prev_tplMaListWindow" style="position: relative; text-align: initial;padding: 4px ">
 				<div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121" > 
 						<img src="widgets/material/img/fts_door.png" style="width: 100px; height: 100px;"></div></div>'
-        data-vis-attrs="oid/id;title/text;subtitle/text;"
-        data-vis-set="material"
-        data-vis-type="val"
-        data-vis-name="ListDoor">
-    <div class="vis-widget <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>" >
+	data-vis-attrs="oid/id;title/text;subtitle/text;" data-vis-set="material" data-vis-type="val"
+	data-vis-name="ListDoor">
+	<div class="vis-widget <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>" >
 		<div class="vis-widget-body" >
 			<div class="md-list-icon">
 				<img src="widgets/material/img/fts_door.png">
@@ -41,17 +36,12 @@
 	<% vis.binds.material.tplMdListDoor(this.data.wid, this.view, this.data);  %>
 </script>
 
-<script id="tplMaListWindow"
-        type="text/ejs"
-        class="vis-tpl"
-        data-vis-prev='<div id="prev_tplMaListWindow" style="position: relative; text-align: initial;padding: 4px ">
+<script id="tplMaListWindow" type="text/ejs" class="vis-tpl" data-vis-prev='<div id="prev_tplMaListWindow" style="position: relative; text-align: initial;padding: 4px ">
 			<div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121" > 
 					<img src="widgets/material/img/fts_window_2w.png" style="width: 100px; height: 100px;"></div></div>'
-        data-vis-attrs="oid/id;title/text;subtitle/text;"
-        data-vis-set="material"
-        data-vis-type="val"
-        data-vis-name="ListWindow">
-		<div class="vis-widget <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>" >
+	data-vis-attrs="oid/id;title/text;subtitle/text;" data-vis-set="material" data-vis-type="val"
+	data-vis-name="ListWindow">
+	<div class="vis-widget <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>" >
 			<div class="vis-widget-body" >
 				<div class="md-list-icon">
 					<img src="widgets/material/img/fts_window_2w.png">
@@ -70,17 +60,12 @@
 		<% vis.binds.material.tplMdListWindow(this.data.wid, this.view, this.data);  %>
 </script>
 
-<script id="tplMaListShutter"
-        type="text/ejs"
-        class="vis-tpl"
-        data-vis-prev='<div id="prev_tplMaListShutter" style="position: relative; text-align: initial;padding: 4px ">
+<script id="tplMaListShutter" type="text/ejs" class="vis-tpl" data-vis-prev='<div id="prev_tplMaListShutter" style="position: relative; text-align: initial;padding: 4px ">
 				<div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121" > 
 					<img src="widgets/material/img/fts_shutter_100.png" style="width: 100px; height: 100px;"></div></div>'
-        data-vis-attrs="oid/id;title/text;subtitle/text;"
-        data-vis-set="material"
-        data-vis-type="val"
-        data-vis-name="ListWindowShutter">
-		<div class="vis-widget <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>" >
+	data-vis-attrs="oid/id;title/text;subtitle/text;" data-vis-set="material" data-vis-type="val"
+	data-vis-name="ListWindowShutter">
+	<div class="vis-widget <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>" >
 			<div class="vis-widget-body" >
 				<div class="md-list-icon">
 					<img src="widgets/material/img/fts_shutter_100.png">
@@ -103,17 +88,12 @@
 		<% vis.binds.material.tplMdListShutter(this.data.wid, this.view, this.data);  %>
 </script>
 
-<script id="tplMaListTemp"
-        type="text/ejs"
-        class="vis-tpl"
-        data-vis-prev='<div id="prev_tplMaListTemp" style="position: relative; text-align: initial;padding: 4px ">
+<script id="tplMaListTemp" type="text/ejs" class="vis-tpl" data-vis-prev='<div id="prev_tplMaListTemp" style="position: relative; text-align: initial;padding: 4px ">
 				<div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121" > 
 					<img src="widgets/material/img/temp_temperature.png" style="width: 100px; height: 100px;"></div></div>'
-        data-vis-attrs="oid/id;title/text;subtitle/text;"
-        data-vis-set="material"
-        data-vis-type="val"
-        data-vis-name="ListTemperature">
-		<div class="vis-widget <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>" >
+	data-vis-attrs="oid/id;title/text;subtitle/text;" data-vis-set="material" data-vis-type="val"
+	data-vis-name="ListTemperature">
+	<div class="vis-widget <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>" >
 			<div class="vis-widget-body" >
 				<div class="md-list-icon">
 					<img src="widgets/material/img/temp_temperature.png">
@@ -132,17 +112,13 @@
 		<% vis.binds.material.tplMdListTemp(this.data.wid, this.view, this.data);  %>
 </script>
 
-<script id="tplMaListHumid"
-        type="text/ejs"
-        class="vis-tpl"
-        data-vis-prev='<div id="prev_tplMaListHumid" style="position: relative; text-align: initial;padding: 4px ">
+<script id="tplMaListHumid" type="text/ejs" class="vis-tpl" data-vis-prev='<div id="prev_tplMaListHumid" style="position: relative; text-align: initial;padding: 4px ">
 				<div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121" > 
 					<img src="widgets/material/img/humid_humidity.png" style="width: 100px; height: 100px;"></div></div>'
-        data-vis-attrs="oid/id;title/text;subtitle/text;"
-        data-vis-set="material"
-        data-vis-type="val"
-        data-vis-name="ListHumidity">
-		<div class="vis-widget <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>" >
+	data-vis-attrs="oid/id;title/text;subtitle/text;" data-vis-set="material" data-vis-type="val"
+	data-vis-name="ListHumidity">
+	<div class="vis-widget <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>" >
+			<div  style="background-color:white;height: 100%;width:100%;opacity: 0.08;" >
 			<div class="vis-widget-body" >
 				<div class="md-list-icon">
 					<img src="widgets/material/img/humid_humidity.png">
@@ -158,23 +134,15 @@
 				<div class="md-list-value mdui-value"></div>
 			</div>
 		</div>
-		<div class="vis-widget <%== this.data.attr('class') %> md-list" id="ea_<%= this.data.attr('wid') %>" >
-			<div class="vis-widget-body " style="opacity: 0.08;" >
-			</div>
 		</div>
 		<% vis.binds.material.tplMdListHumid(this.data.wid, this.view, this.data);  %>
 </script>
-<script id="tplMaListOccupancy"
-        type="text/ejs"
-        class="vis-tpl"
-        data-vis-prev='<div id="prev_tplMaListOccupancy" style="position: relative; text-align: initial;padding: 4px ">
+<script id="tplMaListOccupancy" type="text/ejs" class="vis-tpl" data-vis-prev='<div id="prev_tplMaListOccupancy" style="position: relative; text-align: initial;padding: 4px ">
 				<div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121" > 
 					<img src="widgets/material/img/motion.png" style="width: 100px; height: 100px;"></div></div>'
-        data-vis-attrs="oid/id;title/text;subtitle/text;"
-        data-vis-set="material"
-        data-vis-type="val"
-        data-vis-name="ListOccupancyity">
-		<div class="vis-widget <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>" >
+	data-vis-attrs="oid/id;title/text;subtitle/text;" data-vis-set="material" data-vis-type="val"
+	data-vis-name="ListOccupancyity">
+	<div class="vis-widget <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>" >
 			<div class="vis-widget-body" >
 				<div class="md-list-icon">
 					<img src="widgets/material/img/motion.png">
@@ -193,17 +161,12 @@
 		<% vis.binds.material.tplMdListOccupancy(this.data.wid, this.view, this.data);  %>
 </script>
 
-<script id="tplMaListLight"
-        type="text/ejs"
-        class="vis-tpl"
-        data-vis-prev='<div id="prev_tplMaListLight" style="position: relative; text-align: initial;padding: 4px ">
+<script id="tplMaListLight" type="text/ejs" class="vis-tpl" data-vis-prev='<div id="prev_tplMaListLight" style="position: relative; text-align: initial;padding: 4px ">
 				<div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121" > 
 					<img src="widgets/material/img/light_light_dim_100.png" style="width: 100px; height: 100px;"></div></div>'
-        data-vis-attrs="oid/id;title/text;subtitle/text;"
-        data-vis-set="material"
-        data-vis-type="val"
-        data-vis-name="ListLight">
-		<div class="vis-widget <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>" >
+	data-vis-attrs="oid/id;title/text;subtitle/text;" data-vis-set="material" data-vis-type="val"
+	data-vis-name="ListLight">
+	<div class="vis-widget <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>" >
 			<div class="vis-widget-body" >
 				<div class="md-list-icon">
 					<img src="widgets/material/img/light_light_dim_100.png">
@@ -227,17 +190,12 @@
 		<% vis.binds.material.tplMdListLight(this.data.wid, this.view, this.data);  %>
 </script>
 
-<script id="tplMaListLightDim"
-        type="text/ejs"
-        class="vis-tpl"
-        data-vis-prev='<div id="prev_tplMaListLightDim" style="position: relative; text-align: initial;padding: 4px ">
+<script id="tplMaListLightDim" type="text/ejs" class="vis-tpl" data-vis-prev='<div id="prev_tplMaListLightDim" style="position: relative; text-align: initial;padding: 4px ">
 				<div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121" > 
 					<img src="widgets/material/img/light_light_dim_100.png" style="width: 100px; height: 100px;"></div></div>'
-        data-vis-attrs="oid/id;title/text;subtitle/text;"
-        data-vis-set="material"
-        data-vis-type="val"
-        data-vis-name="ListLightDim">
-		<div class="vis-widget <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>" >
+	data-vis-attrs="oid/id;title/text;subtitle/text;" data-vis-set="material" data-vis-type="val"
+	data-vis-name="ListLightDim">
+	<div class="vis-widget <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>" >
 			<div class="vis-widget-body" >
 				<div class="md-list-icon">
 					<img src="widgets/material/img/light_light_dim_100.png">
