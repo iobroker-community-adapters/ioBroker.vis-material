@@ -174,6 +174,7 @@ vis.binds.material = {
     tplMdListHumid: function (widgetID, view, data) {
         var $div = $('#' + widgetID);
 
+        log(JSON.stringify(data));
         // if nothing found => wait
         if (!$div.length) {
             return setTimeout(function () {
