@@ -174,7 +174,6 @@ vis.binds.material = {
     tplMdListHumid: function (widgetID, view, data) {
         var $div = $('#' + widgetID);
 
-        log.console.error("meine info:"+JSON.stringify(data));
         // if nothing found => wait
         if (!$div.length) {
             return setTimeout(function () {
@@ -182,8 +181,7 @@ vis.binds.material = {
             }, 100);
         }
 
-        console.info(data.oid);
-        // grey out the value in case the last change is more than 24h ago
+    // grey out the value in case the last change is more than 24h ago
         var curTime = new Date().getTime();
         var lcTime = vis.states[data.oid + '.lc'];
         var seconds = (curTime - lcTime) / 1000;
