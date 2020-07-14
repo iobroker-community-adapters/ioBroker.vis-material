@@ -173,7 +173,7 @@ vis.binds.material = {
     },
     tplMdListHumid: function (widgetID, view, data) {
         var $div = $('#' + widgetID);
-
+        adapter.console.info("Hallo");
         // if nothing found => wait
         if (!$div.length) {
             return setTimeout(function () {
