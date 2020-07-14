@@ -212,7 +212,6 @@ vis.binds.material = {
         const valNoMotion = _('nomotion');
 
         var $div = $('#' + widgetID);
-        log.console.error("meine info:"+JSON.stringify(data));
        
         // if nothing found => wait
         if (!$div.length) {
