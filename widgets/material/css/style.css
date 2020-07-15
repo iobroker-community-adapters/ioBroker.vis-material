@@ -36,3 +36,16 @@
     background-color: white;
     opacity: 0.1;
 }
+
+#my_parent {
+    position: relative;
+}
+
+#my_child {
+    position: absolute;
+}
+
+#opac {
+    background-color: white;
+    opacity: 0.08;
+}

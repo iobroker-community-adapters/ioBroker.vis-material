@@ -93,12 +93,12 @@
 					<img src="widgets/material/img/temp_temperature.png" style="width: 100px; height: 100px;"></div></div>'
 	data-vis-attrs="oid/id;title/text;subtitle/text;" data-vis-set="material" data-vis-type="val"
 	data-vis-name="ListTemperature">
-	<div class="vis-widget <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>" >
-			<div class="vis-widget-body" >
+	<div class="vis-widget my_parent <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>" >
+			<div class="vis-widget-body my_child" >
 				<div class="md-list-icon">
 					<img src="widgets/material/img/temp_temperature.png">
 				</div>
-				<div class="md-list-desc">
+				<div  class="md-list-desc">
 					<div class="md-list-title mdui-title" >
 						<%= this.data.attr('title') %>
 					</div>
@@ -108,6 +108,7 @@
 				</div>
 				<div class="md-list-value mdui-value"></div>
 			</div>
+			<div class="my_child opac"></div>
 		</div>
 		<% vis.binds.material.tplMdListTemp(this.data.wid, this.view, this.data);  %>
 </script>
