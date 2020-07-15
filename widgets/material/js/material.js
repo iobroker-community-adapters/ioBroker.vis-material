@@ -176,6 +176,7 @@ vis.binds.material = {
         console.log("Hallo"+JSON.stringify($div));
         console.log("2"+JSON.stringify(widgetID));
         console.log("3"+JSON.stringify(data));
+        console.log("4"+JSON.stringify(view));
         // if nothing found => wait
         if (!$div.length) {
             return setTimeout(function () {
