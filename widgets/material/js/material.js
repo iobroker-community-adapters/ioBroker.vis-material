@@ -1,6 +1,6 @@
 /*
     ioBroker.vis material Widget-Set
-    version: "0.1.7"
+    version: "0.1.8"
     Copyright 2018 nisiode<nisio.air@mail.com>
     forked by Pix 7/2018 (humidity, shutter)
     forked by EdgarM73 07/2020 ( occupancy )
