@@ -1,7 +1,7 @@
 {
     "common": {
         "name": "vis-material",
-        "version": "0.1.7",
+        "version": "0.1.8",
         "news": { 
             "0.1.7": {
                 "en": "feat: new occupancy widget",
