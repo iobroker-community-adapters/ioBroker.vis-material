@@ -32,6 +32,7 @@
 			</div>
 			<div class="md-list-value mdui-value"></div>
 		</div>
+		<div class="vis-widget-body ms-button-op my_child opac" ></div>
 	</div>
 	<% vis.binds.material.tplMdListDoor(this.data.wid, this.view, this.data);  %>
 </script>
@@ -56,6 +57,7 @@
 				</div>
 				<div class="md-list-value mdui-value"></div>
 			</div>
+			<div class="vis-widget-body ms-button-op my_child opac" ></div>
 		</div>
 		<% vis.binds.material.tplMdListWindow(this.data.wid, this.view, this.data);  %>
 </script>
@@ -82,8 +84,9 @@
 					<div class="mdui-slider" >
 						<div class="sliderJQUI" id="<%= this.data.attr('wid') %>_slider" data-oid="<%= this.data.attr('oid') %>" data-oid2="<%= this.data.attr('oid-2') %>" data-oid-working="<%= this.data.attr('oid-working') %>"  data-oid2-working="<%= this.data.attr('oid-2-working') %>"<%= (el) -> vis.binds.jqueryui.slider(el, {min:0,max:100,step:1,inverted:false}) %> /></div>
 					</div>
-				</div>
+				</div>				
 			</div>
+			<div class="vis-widget-body ms-button-op my_child opac" ></div>
 		</div>
 		<% vis.binds.material.tplMdListShutter(this.data.wid, this.view, this.data);  %>
 </script>
@@ -118,7 +121,7 @@
 					<img src="widgets/material/img/humid_humidity.png" style="width: 100px; height: 100px;"></div></div>'
 	data-vis-attrs="oid/id;title/text;subtitle/text;" data-vis-set="material" data-vis-type="val"
 	data-vis-name="ListHumidity">
-	<div class="vis-widget  my_parent <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>" >	
+	<div class="vis-widget  <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>" >	
 			<div class="vis-widget-body my_child" >
 				<div class="md-list-icon">
 					<img src="widgets/material/img/humid_humidity.png">
@@ -157,7 +160,8 @@ data-vis-name="ListOccupancy">
             <%= this.data.attr('subtitle') %>
         </div>
     </div>
-    <div class="md-list-value mdui-value"></div>
+	<div class="md-list-value mdui-value"></div>
+	<div class="vis-widget-body ms-button-op my_child opac" ></div>
 </div>
 
 </div>
@@ -191,6 +195,7 @@ data-vis-name="ListOccupancy">
 					</div>
 				</div>
 			</div>
+			<div class="vis-widget-body ms-button-op my_child opac" ></div>
 		</div>
 		<% vis.binds.material.tplMdListLight(this.data.wid, this.view, this.data);  %>
 </script>
@@ -219,6 +224,7 @@ data-vis-name="ListOccupancy">
 					</div>
 				</div>
 			</div>
+			<div class="vis-widget-body ms-button-op my_child opac" ></div>
 		</div>
 		<% vis.binds.material.tplMdListLightDim(this.data.wid, this.view, this.data);  %>
 </script>
