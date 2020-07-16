@@ -1,11 +1,11 @@
 {
     "common": {
         "name": "vis-material",
-        "version": "0.1.8",
+        "version": "0.1.7",
         "news": { 
             "0.1.7": {
-                "en": "feat: new occupancy widget",
-                "de": "feat: neues Bewegungsmelder widget",
+                "en": "feat: adapted button alike view for widgets",
+                "de": "feat: widgts sehen aus wie buttons",
                 "ru": "feat: new occupancy widget"
             },
             "0.1.6": {
