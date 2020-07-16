@@ -37,15 +37,15 @@
     opacity: 0.1;
 }
 
-#my_parent {
+.my_parent {
     position: relative;
 }
 
-#my_child {
+.my_child {
     position: absolute;
 }
 
-#opac {
+.opac {
     background-color: white;
     opacity: 0.08;
     height:100%;
