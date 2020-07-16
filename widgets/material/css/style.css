@@ -38,7 +38,8 @@
 }
 
 .my_parent {
-    color:white:
+    color:white;
+}
 
 .my_child {
     position: absolute;
