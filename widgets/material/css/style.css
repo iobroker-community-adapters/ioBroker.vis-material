@@ -48,4 +48,6 @@
 #opac {
     background-color: white;
     opacity: 0.08;
+    height:100%;
+    width:100%;
 }
