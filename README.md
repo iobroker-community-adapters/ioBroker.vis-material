@@ -22,7 +22,9 @@ https://github.com/Uhula/ioBroker-Material-Design-Style
 
 ## Changelog
 
-#
+### 0.1.8
+- (EdgarM73) renamed css classes due to incompatibility with Uhula Material Design Schema
+
 ### 0.1.7
 - (EdgarM73) dark material button alike
 

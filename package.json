@@ -1,7 +1,7 @@
 {
   "name": "iobroker.vis-material",
   "description": "material widgets for ioBroker.vis",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "author": {
     "name": "nisiode",
     "email": "nisio.air@gmail.com"
@@ -11,10 +11,10 @@
     "pix <pix---@hotmail.com>",
     "EdgarM73 <edgar.miller@gmail.com>"
   ],
-  "homepage": "http://gitea:3000/erdal/ioBroker.vis-material",
+  "homepage": "https://github.com/nisiode/ioBroker.vis-material",
   "repository": {
     "type": "git",
-    "url": "http://gitea:3000/erdal/ioBroker.vis-material"
+    "url": "https://github.com/nisiode/ioBroker.vis-material"
   },
   "licenses": [
     {
@@ -42,7 +42,7 @@
     "chai": "^4.1.2"
   },
   "bugs": {
-    "url": "http://gitea:3000/erdal/ioBroker.vis-material/issues"
+    "url": "https://github.com/nisiode/ioBroker.vis-material/issues"
   },
   "readmeFilename": "README.md",
   "main": "widgets/material.html",

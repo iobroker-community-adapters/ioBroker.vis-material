@@ -1,8 +1,13 @@
 {
     "common": {
         "name": "vis-material",
-        "version": "0.1.7",
+        "version": "0.1.8",
         "news": { 
+            "0.1.8": {
+                "en": "feat: now compatible with https://github.com/Uhula/ioBroker-Material-Design-Style",
+                "de": "feat: CSS Klassen umbenannt, damit es kompatibel mit https://github.com/Uhula/ioBroker-Material-Design-Style ist",
+                "ru": "feat: now compatible with https://github.com/Uhula/ioBroker-Material-Design-Style"
+            },
             "0.1.7": {
                 "en": "feat: adapted button alike view for widgets",
                 "de": "feat: widgts sehen aus wie buttons",
