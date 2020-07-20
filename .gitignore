@@ -6,3 +6,6 @@ widgets/widget.html
 widgets/widget.json
 widgets/my.js
 widgets/test.css
+test/test.css
+test/test.html
+vis-material.code-workspace
