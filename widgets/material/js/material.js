@@ -58,13 +58,12 @@ $.extend(true, systemDictionary, {
     "motion": {
         "en": "motion",
         "de": "Bewegung",
-        "ru": "motion",
+        "ru": "motion"},
     "nomotion": {
         "en": "no motion",
         "de": "Nein",
         "ru": "na"
-    }
-    }
+    }    
 });
 
 vis.binds.material = {
