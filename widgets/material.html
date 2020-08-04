@@ -74,21 +74,21 @@
                 <div class="md-list-title mduiw-title" style="color: <%= this.data.attr('Title-color') %>">
                     <%= this.data.attr('title') %>
                 </div>
-                <div class="md-list-subtitle mduiw-subtitle" style="color: <%= this.data.attr('Text-color') %>>
+                <div class="md-list-subtitle mduiw-subtitle" style="color: <%= this.data.attr('Text-color') %>;">
                     <%= this.data.attr('subtitle') %>
                 </div>
             </div>
-            <div class=" md-list-value " style="color: <%=t his.data.attr( 'Text-color') %>>
-                    <div class="mduiw-slider">
-                        <div class="sliderJQUI" id="<%= this.data.attr('wid') %>_slider" data-oid="<%= this.data.attr('oid') %>" data-oid2="<%= this.data.attr('oid-2') %>" data-oid-working="<%= this.data.attr('oid-working') %>" data-oid2-working="<%= this.data.attr('oid-2-working') %>"
-                            <%=( el) -> vis.binds.jqueryui.slider(el, {min:0,max:100,step:1,inverted:false}) %> /></div>
-                    </div>
+            <div class=" md-list-value " style="color: <%=t his.data.attr( 'Text-color') %>;">
+                <div class="mduiw-slider">
+                    <div class="sliderJQUI" id="<%= this.data.attr('wid') %>_slider" data-oid="<%= this.data.attr('oid') %>" data-oid2="<%= this.data.attr('oid-2') %>" data-oid-working="<%= this.data.attr('oid-working') %>" data-oid2-working="<%= this.data.attr('oid-2-working') %>"
+                        <%=( el) -> vis.binds.jqueryui.slider(el, {min:0,max:100,step:1,inverted:false}) %> /></div>
                 </div>
-                <div class="vis-widget-body ms-button-op my_child opac"></div>
             </div>
-
+            <div class="vis-widget-body ms-button-op my_child opac"></div>
         </div>
-        <% vis.binds.material.tplMdListShutter(this.data.wid, this.view, this.data);  %>
+
+    </div>
+    <% vis.binds.material.tplMdListShutter(this.data.wid, this.view, this.data);  %>
 </script>
 
 <script id="tplMaListTemp" type="text/ejs" class="vis-tpl" data-vis-prev='<div id="prev_tplMaListTemp" style="position: relative; text-align: initial;padding: 4px ">
@@ -101,14 +101,14 @@
                 <img src="<%= this.data.attr('card-icon') %>">
             </div>
             <div class="md-list-desc">
-                <div class="md-list-title mduiw-title" style="color: <%= this.data.attr('Text-color') %>>
+                <div class="md-list-title mduiw-title" style="color: <%= this.data.attr('Text-color') %>;">
                     <%= this.data.attr('title') %>
                 </div>
-                <div class=" md-list-subtitle mduiw-subtitle " style="color: <%=t his.data.attr( 'Text-color') %>>
+                <div class=" md-list-subtitle mduiw-subtitle " style="color: <%=t his.data.attr( 'Text-color') %>;">
                     <%= this.data.attr('subtitle') %>
                 </div>
             </div>
-            <div class="md-list-value mduiw-value" style="color: <%= this.data.attr('Text-color') %>></div>
+            <div class="md-list-value mduiw-value" style="color: <%= this.data.attr('Text-color') %>;"></div>
         </div>
         <div class=" vis-widget-body ms-button-op my_child opac "></div>
     </div>
@@ -118,23 +118,22 @@
 <script id="tplMaListHumid " type="text/ejs " class="vis-tpl " data-vis-prev='<div id="prev_tplMaListHumid " style="position: relative; text-align: initial;padding: 4px ">
 				<div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121 " > 
 					<img src="widgets/material/img/humid_humidity.png " style="width: 100px; height: 100px; "></div></div>' data-vis-attrs="oid/id;title/text;subtitle/text;Text-color[white]/color; card-icon[widgets/material/img/humid_humidity.png]/image;
-                " data-vis-set="material "
-    data-vis-type="val " data-vis-name="ListHumidity ">
+                " data-vis-set="material " data-vis-type="val " data-vis-name="ListHumidity ">
     <div class="vis-widget <%==t his.data.attr( 'class') %> md-list" id="
                 <%= this.data.attr('wid') %>">
-                    <div class="vis-widget-body my_child">
-                        <div class="md-list-icon">
-                            <img src="<%= this.data.attr('card-icon') %>">
-                        </div>
-                        <div class="md-list-desc">
-                            <div class="md-list-title mduiw-title" style="color: <%= this.data.attr('Text-color') %>>
+        <div class="vis-widget-body my_child">
+            <div class="md-list-icon">
+                <img src="<%= this.data.attr('card-icon') %>">
+            </div>
+            <div class="md-list-desc">
+                <div class="md-list-title mduiw-title" style="color: <%= this.data.attr('Text-color') %>;">
                     <%= this.data.attr('title') %>
                 </div>
-                <div class=" md-list-subtitle mduiw-subtitle " style="color: <%=t his.data.attr( 'Text-color') %>>
-                                <%= this.data.attr('subtitle') %>
-                            </div>
-                        </div>
-                        <div class="md-list-value mduiw-value" style="color: <%= this.data.attr('Text-color') %>></div>
+                <div class=" md-list-subtitle mduiw-subtitle " style="color: <%=t his.data.attr( 'Text-color') %>;">
+                    <%= this.data.attr('subtitle') %>
+                </div>
+            </div>
+            <div class="md-list-value mduiw-value" style="color: <%= this.data.attr('Text-color') %>;"></div>
         </div>
         <div class=" vis-widget-body ms-button-op my_child opac "></div>
     </div>
@@ -148,19 +147,19 @@
     data-vis-type="val " data-vis-name="ListOccupancy ">
     <div class="vis-widget <%==t his.data.attr( 'class') %> md-list" id="
                             <%= this.data.attr('wid') %>">
-                                <div class="vis-widget-body">
-                                    <div class="md-list-icon">
-                                        <img src="<%= this.data.attr('card-icon') %>">
-                                    </div>
-                                    <div class="md-list-desc">
-                                        <div class="md-list-title mduiw-title" style="color: <%= this.data.attr('Text-color') %>>
+        <div class="vis-widget-body">
+            <div class="md-list-icon">
+                <img src="<%= this.data.attr('card-icon') %>">
+            </div>
+            <div class="md-list-desc">
+                <div class="md-list-title mduiw-title" style="color: <%= this.data.attr('Text-color') %>;">
                     <%= this.data.attr('title') %>
                 </div>
-                <div class=" md-list-subtitle mduiw-subtitle " style="color: <%=t his.data.attr( 'Text-color') %>>
-                                            <%= this.data.attr('subtitle') %>
-                                        </div>
-                                    </div>
-                                    <div class="md-list-value mduiw-value" style="color: <%= this.data.attr('Text-color') %>></div>
+                <div class=" md-list-subtitle mduiw-subtitle " style="color: <%=t his.data.attr( 'Text-color') %>;">
+                    <%= this.data.attr('subtitle') %>
+                </div>
+            </div>
+            <div class="md-list-value mduiw-value" style="color: <%= this.data.attr('Text-color') %>;"></div>
             <div class=" vis-widget-body ms-button-op my_child opac "></div>
         </div>
 
@@ -173,28 +172,27 @@
 <script id="tplMaListLight " type="text/ejs " class="vis-tpl " data-vis-prev='<div id="prev_tplMaListLight " style="position: relative; text-align: initial;padding: 4px ">
 				<div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121 " > 
 					<img src="widgets/material/img/light_light_dim_100.png " style="width: 100px; height: 100px; "></div></div>' data-vis-attrs="oid/id;title/text;subtitle/text;Text-color[white]/color; card-icon[widgets/material/img/light_light_dim_100.png]/image;
-                                        " data-vis-set="material "
-    data-vis-type="val " data-vis-name="ListLight ">
+                                        " data-vis-set="material " data-vis-type="val " data-vis-name="ListLight ">
     <div class="vis-widget <%==t his.data.attr( 'class') %> md-list" id="
                                         <%= this.data.attr('wid') %>">
-                                            <div class="vis-widget-body my_child ">
-                                                <div class="md-list-icon">
-                                                    <img src="<%= this.data.attr('card-icon') %>">
-                                                </div>
-                                                <div class="md-list-desc">
-                                                    <div class="md-list-title mduiw-title" style="color: <%= this.data.attr('Text-color') %>>
+        <div class="vis-widget-body my_child ">
+            <div class="md-list-icon">
+                <img src="<%= this.data.attr('card-icon') %>">
+            </div>
+            <div class="md-list-desc">
+                <div class="md-list-title mduiw-title" style="color: <%= this.data.attr('Text-color') %>;">
                     <%= this.data.attr('title') %>
                 </div>
-                <div class=" md-list-subtitle mduiw-subtitle " style="color: <%=t his.data.attr( 'Text-color') %>>
-                                                        <%= this.data.attr('subtitle') %>
-                                                    </div>
-                                                </div>
-                                                <div class="md-list-value" style="color: <%= this.data.attr('Text-color') %>>
+                <div class=" md-list-subtitle mduiw-subtitle " style="color: <%=t his.data.attr( 'Text-color') %>;">
+                    <%= this.data.attr('subtitle') %>
+                </div>
+            </div>
+            <div class="md-list-value" style="color: <%= this.data.attr('Text-color') %>;">
                 <div class=" mduiw-switch ">
                     <input type="checkbox " name="<%=t his.data.attr( 'wid') %>_checkbox" id="
                                                     <%= this.data.attr('wid') %>_checkbox" data-oid="
                                                         <%= this.data.attr('oid') %>" />
-                                                            <label for="<%= this.data.attr('wid') %>_checkbox"><label>
+                    <label for="<%= this.data.attr('wid') %>_checkbox"><label>
 					</div>
 				</div>
 			</div>
@@ -214,14 +212,14 @@
 					<img src="<%= this.data.attr('card-icon') %>">
 				</div>
 				<div class="md-list-desc">
-					<div class="md-list-title mduiw-title"  style="color: <%= this.data.attr('Text-color') %>>
+					<div class="md-list-title mduiw-title"  style="color: <%= this.data.attr('Text-color') %>;">
 						<%= this.data.attr('title') %>
 					</div>
-					<div class="md-list-subtitle mduiw-subtitle" style="color: <%= this.data.attr('Text-color') %>>
+					<div class="md-list-subtitle mduiw-subtitle" style="color: <%= this.data.attr('Text-color') %>;">
 						<%= this.data.attr('subtitle') %>
 					</div>
 				</div>
-				<div class="md-list-value"  style="color: <%= this.data.attr('Text-color') %>>
+				<div class="md-list-value"  style="color: <%= this.data.attr('Text-color') %>;">
 					<div class="mduiw-slider" >
 						<div class="sliderJQUI" id="<%= this.data.attr('wid') %>_slider" data-oid="<%= this.data.attr('oid') %>" data-oid2="<%= this.data.attr('oid-2') %>" data-oid-working="<%= this.data.attr('oid-working') %>"  data-oid2-working="<%= this.data.attr('oid-2-working') %>"<%= (el) -> vis.binds.jqueryui.slider(el, {min:0,max:100,step:1,inverted:false}) %> /></div>
 					</div>
