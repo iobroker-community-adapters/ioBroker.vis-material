@@ -14,21 +14,22 @@
 
 <script id="tplMaListDoor" type="text/ejs" class="vis-tpl" data-vis-prev='<div id="prev_tplMaListWindow" style="position: relative; text-align: initial;padding: 4px ">
 				<div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121" > 
-						<img src="widgets/material/img/fts_door.png" style="width: 100px;  height: 100px;"></div></div>' data-vis-attrs="oid/id;title/text;subtitle/text;text-color[white]/color;" data-vis-set="material" data-vis-type="val" data-vis-name="ListDoor">
+						<img src="widgets/material/img/fts_door.png" style="width: 100px;  height: 100px;"></div></div>' data-vis-attrs="oid/id;title/text;subtitle/text;Title-color[white]/color;Subtitle-color[white]/color;Status-color[white]/color;Icon-color[white]/color"
+    data-vis-set="material" data-vis-type="val" data-vis-name="ListDoor">
     <div class="vis-widget   <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>">
         <div class="vis-widget-body my_child">
             <div class="md-list-icon">
-                <img src="widgets/material/img/fts_door.png">
+                <img src="widgets/material/img/fts_door.png" style="color:<%= this.data.attr('Icon-color') %>">
             </div>
             <div class="md-list-desc">
-                <div class="md-list-title mdui-title" style="color: <%= this.data.attr('text-color') %>">
+                <div class="md-list-title mdui-title" style="color: <%= this.data.attr('Title-color') %>">
                     <%= this.data.attr('title') %>
                 </div>
-                <div class="md-list-subtitle mdui-subtitle" style="color: <%= this.data.attr('text-color') %>">
+                <div class="md-list-subtitle mdui-subtitle" style="color: <%= this.data.attr('Subtitle-color') %>">
                     <%= this.data.attr('subtitle') %>
                 </div>
             </div>
-            <div class="md-list-value mdui-value" style="color: <%= this.data.attr('text-color') %>"></div>
+            <div class="md-list-value mdui-value" style="color: <%= this.data.attr('Status-color') %>"></div>
         </div>
         <div class="vis-widget-body ms-button-op my_child opac"></div>
     </div>
