@@ -10,3 +10,6 @@ test/test.css
 test/test.html
 vis-material.code-workspace
 widgets/text.hmtl
+widgets/mat.css
+widgets/material/css/global.css
+widgets/material/css/project.css
