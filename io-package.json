@@ -1,8 +1,13 @@
 {
     "common": {
         "name": "vis-material",
-        "version": "0.1.8",
-        "news": { 
+        "version": "0.2.0",
+        "news": {
+            "0.2.0": {
+                "en": "feat: all items are now more customizable, e.g. Text-color, own Icon, colored opacity",
+                "de": "feat: Alle Items sind nun besser anpassbar, z.b. Textfarbe, eigene Icons, Auswahl an farbiger opacity",
+                "ru": "feat: все элементы теперь более настраиваемые, например Цвет текста, собственный значок, цветная непрозрачность"
+            },
             "0.1.8": {
                 "en": "feat: now compatible with https://github.com/Uhula/ioBroker-Material-Design-Style",
                 "de": "feat: CSS Klassen umbenannt, damit es kompatibel mit https://github.com/Uhula/ioBroker-Material-Design-Style ist",
@@ -47,7 +52,7 @@
                 "en": "feat: include material css from uhula",
                 "de": "feat: include material css from uhula",
                 "ru": "feat: include material css from uhula"
-            },   
+            },
             "0.0.1": {
                 "en": "initial adapter",
                 "de": "Initiale Version",
@@ -88,6 +93,5 @@
     "native": {
         "dependencies": []
     },
-    "instanceObjects": [
-    ]
+    "instanceObjects": []
 }

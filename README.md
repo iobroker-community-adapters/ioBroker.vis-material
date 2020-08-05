@@ -22,6 +22,9 @@ https://github.com/Uhula/ioBroker-Material-Design-Style
 
 ## Changelog
 
+### 0.2.0
+- (EdgarM73) widgets are now customizable, text-color, icon, color of overlay
+
 ### 0.1.8
 - (EdgarM73) renamed css classes due to incompatibility with Uhula Material Design Schema
 

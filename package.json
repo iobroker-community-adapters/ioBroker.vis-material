@@ -1,56 +1,54 @@
 {
-  "name": "iobroker.vis-material",
-  "description": "material widgets for ioBroker.vis",
-  "version": "0.1.8",
-  "author": {
-    "name": "nisiode",
-    "email": "nisio.air@gmail.com"
-  },
-  "contributors": [
-    "nisiode <nisio.air@gmail.com>",
-    "pix <pix---@hotmail.com>",
-    "EdgarM73 <edgar.miller@gmail.com>"
-  ],
-  "homepage": "https://github.com/nisiode/ioBroker.vis-material",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/nisiode/ioBroker.vis-material"
-  },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/nisiode/ioBroker.vis-material/blob/master/LICENSE"
+    "name": "iobroker.vis-material",
+    "description": "material widgets for ioBroker.vis",
+    "version": "0.2.0",
+    "author": {
+        "name": "nisiode",
+        "email": "nisio.air@gmail.com"
+    },
+    "contributors": [
+        "nisiode <nisio.air@gmail.com>",
+        "pix <pix---@hotmail.com>",
+        "EdgarM73 <edgar.miller@gmail.com>"
+    ],
+    "homepage": "https://github.com/nisiode/ioBroker.vis-material",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/nisiode/ioBroker.vis-material"
+    },
+    "licenses": [{
+        "type": "MIT",
+        "url": "https://github.com/nisiode/ioBroker.vis-material/blob/master/LICENSE"
+    }],
+    "keywords": [
+        "ioBroker",
+        "GUI",
+        "material vis"
+    ],
+    "devDependencies": {
+        "grunt": "^1.0.1",
+        "grunt-cli": "^1.2.0",
+        "grunt-contrib-clean": "^1.1.0",
+        "grunt-contrib-compress": "^1.4.3",
+        "grunt-contrib-copy": "^1.0.0",
+        "grunt-contrib-jshint": "^1.1.0",
+        "grunt-exec": "^3.0.0",
+        "grunt-http": "^2.2.0",
+        "grunt-jscs": "^3.0.1",
+        "grunt-replace": "^1.0.1",
+        "mocha": "^4.1.0",
+        "chai": "^4.1.2"
+    },
+    "bugs": {
+        "url": "https://github.com/nisiode/ioBroker.vis-material/issues"
+    },
+    "readmeFilename": "README.md",
+    "main": "widgets/material.html",
+    "scripts": {
+        "test": "node node_modules/mocha/bin/mocha --exit"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "@iobroker/adapter-core": "^1.0.3"
     }
-  ],
-  "keywords": [
-    "ioBroker",
-    "GUI",
-    "material vis"
-  ],
-  "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-cli": "^1.2.0",
-    "grunt-contrib-clean": "^1.1.0",
-    "grunt-contrib-compress": "^1.4.3",
-    "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-jshint": "^1.1.0",
-    "grunt-exec": "^3.0.0",
-    "grunt-http": "^2.2.0",
-    "grunt-jscs": "^3.0.1",
-    "grunt-replace": "^1.0.1",
-    "mocha": "^4.1.0",
-    "chai": "^4.1.2"
-  },
-  "bugs": {
-    "url": "https://github.com/nisiode/ioBroker.vis-material/issues"
-  },
-  "readmeFilename": "README.md",
-  "main": "widgets/material.html",
-  "scripts": {
-    "test": "node node_modules/mocha/bin/mocha --exit"
-  },
-  "license": "MIT",
-  "dependencies": {
-    "@iobroker/adapter-core": "^1.0.3"
-  }
 }
