@@ -142,11 +142,12 @@
 </script>
 <script id="tplMaListOccupancy" type="text/ejs" class="vis-tpl" data-vis-prev='<div id="prev_tplMaListOccupancy" style="position: relative; text-align: initial;padding: 4px ">
     <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121" > 
-        <img src="widgets/material/img/motion.png" style="width: 100px; height: 100px;"></div></div>' data-vis-attrs="oid/id;title/text;subtitle/text;Text-color[white]/color;" data-vis-set="material" data-vis-type="val" data-vis-name="ListOccupancy">
+        <img src="widgets/material/img/motion.png" style="width: 100px; height: 100px;"></div></div>' data-vis-attrs="oid/id;title/text;subtitle/text;Text-color[white]/color;card-icon[widgets/material/img/motion.png]/image" data-vis-set="material" data-vis-type="val"
+    data-vis-name="ListOccupancy">
     <div class="vis-widget <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>">
         <div class="vis-widget-body">
             <div class="md-list-icon">
-                <img src="widgets/material/img/motion.png">
+                <img src="<%= this.data.attr('card-icon') %>">
             </div>
             <div class="md-list-desc">
                 <div class="md-list-title mduiw-title" style="color: <%= this.data.attr('Text-color') %>;">

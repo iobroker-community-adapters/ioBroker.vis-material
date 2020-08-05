@@ -848,7 +848,7 @@ Disabled text: 30% #FFFFFF Disabled button: 12% #FFFFFF
 
 .mduiw-value {
     z-index: 2;
-    color: rgba(255, 255, 255, 1) !important;
+    /*  color: rgba(255, 255, 255, 1) !important;*/
     font-weight: bold !important;
     font-size: 1em !important;
     text-shadow: none !important;
