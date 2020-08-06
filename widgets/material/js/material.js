@@ -317,7 +317,7 @@ vis.binds.material = {
             update(vis.states[data.oid + '.val']);
         }
     },
-    tplMdListShutter: function(widgetID, view, data) {
+    tplMdListWindowShutter: function(widgetID, view, data) {
         const srcOff = 'widgets/material/img/fts_shutter_00.png';
         const srcOn = 'widgets/material/img/fts_shutter_100.png';
         var $div = $('#' + widgetID);
@@ -325,7 +325,7 @@ vis.binds.material = {
         // if nothing found => wait
         if (!$div.length) {
             return setTimeout(function() {
-                vis.binds.material.tplMdListShutter(widgetID, view, data);
+                vis.binds.material.tplMdListWindowShutter(widgetID, view, data);
             }, 100);
         }
 
