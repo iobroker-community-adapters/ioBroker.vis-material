@@ -64,6 +64,11 @@ $.extend(true, systemDictionary, {
         "en": "no motion",
         "de": "Nein",
         "ru": "na"
+    },
+    "Text-Color": {
+        "en": "Text Color",
+        "de": "Textfarbe",
+        "ru": "na"
     }
 });
 
