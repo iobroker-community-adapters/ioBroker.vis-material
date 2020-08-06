@@ -103,7 +103,7 @@ $.extend(true, systemDictionary, {
 });
 
 vis.binds.material = {
-    version: "0.1.6",
+    version: "0.2.0",
     showVersion: function() {
         if (vis.binds.material.version) {
             console.log('Version material: ' + vis.binds.material.version);
