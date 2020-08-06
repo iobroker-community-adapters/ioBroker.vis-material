@@ -22,14 +22,14 @@
                 <img src="<%= this.data.attr('card-icon') %>">
             </div>
             <div class="md-list-desc">
-                <div class="md-list-title mdui-title" style="color: <%= this.data.attr('Text-color') %>;">
+                <div class="md-list-title mduiw-title" style="color: <%= this.data.attr('Text-color') %>;">
                     <%= this.data.attr('title') %>
                 </div>
-                <div class="md-list-subtitle mdui-subtitle" style="color: <%= this.data.attr('Text-color') %>;">
+                <div class="md-list-subtitle mduiw-subtitle" style="color: <%= this.data.attr('Text-color') %>;">
                     <%= this.data.attr('subtitle') %>
                 </div>
             </div>
-            <div class="md-list-value mdui-value" style="color: <%= this.data.attr('Text-color') %>;"></div>
+            <div class="md-list-value mduiw-value" style="color: <%= this.data.attr('Text-color') %>;"></div>
         </div>
         <div class="vis-widget-body ms-button-op my_child <%= this.data.attr('opacity-color') %>"></div>
     </div>
@@ -92,35 +92,59 @@
 </script>-->
 
 <script id="tplMaListShutter" type="text/ejs" class="vis-tpl" data-vis-prev='<div id="prev_tplMaListShutter" style="position: relative; text-align: initial;padding: 4px ">
-    <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121" > 
-        <img src="widgets/material/img/fts_shutter_100.png" style="width: 100px; height: 100px;"></div></div>' data-vis-attrs="oid/id;title/text;subtitle/text;Text-color[white]/color; card-icon[widgets/material/img/light_light_dim_100.png]/image;opacity-color[opac-white]/select,opac-white,opac-green,opac-purple,opac-red,opac-blue;"
-    data-vis-set="material" data-vis-type="val" data-vis-name="ListWindowShutter">
-    <div class="vis-widget my_parent <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>">
-        <div class="vis-widget-body my_child  ">
+				<div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121" > 
+					<img src="widgets/material/img/fts_shutter_100.png" style="width: 100px; height: 100px;"></div></div>' data-vis-attrs="oid/id;title/text;subtitle/text;" data-vis-set="material" data-vis-type="val" data-vis-name="ListWindowShutter">
+    <div class="vis-widget <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>">
+        <div class="vis-widget-body">
             <div class="md-list-icon">
-                <img src="<%= this.data.attr('card-icon') %>">
+                <img src="widgets/material/img/fts_shutter_100.png">
             </div>
             <div class="md-list-desc">
-                <div class="md-list-title mduiw-title" style="color: <%= this.data.attr('Text-color') %>;">
+                <div class="md-list-title mduiw-title">
                     <%= this.data.attr('title') %>
                 </div>
-                <div class="md-list-subtitle mduiw-subtitle" style="color: <%= this.data.attr('Text-color') %>;">
+                <div class="md-list-subtitle mduiw-subtitle">
                     <%= this.data.attr('subtitle') %>
                 </div>
             </div>
-            <div class="md-list-value" style="color: <%= this.data.attr('Text-color') %>;">
+            <div class="md-list-value">
+                <div class="mduiw-slider">
+                    <div class="sliderJQUI" id="<%= this.data.attr('wid') %>_slider" data-oid="<%= this.data.attr('oid') %>" data-oid2="<%= this.data.attr('oid-2') %>" data-oid-working="<%= this.data.attr('oid-working') %>" data-oid2-working="<%= this.data.attr('oid-2-working') %>"
+                        <%=( el) -> vis.binds.jqueryui.slider(el, {min:0,max:100,step:1,inverted:true}) %> /></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <% vis.binds.material.tplMdListShutter(this.data.wid, this.view, this.data);  %>
+</script>
+<script id="tplMaListLightDim" type="text/ejs" class="vis-tpl" data-vis-prev='<div id="prev_tplMaListLightDim" style="position: relative; text-align: initial;padding: 4px ">
+				<div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121" > 
+					<img src="widgets/material/img/light_light_dim_100.png" style="width: 100px; height: 100px;"></div></div>' data-vis-attrs="oid/id;title/text;subtitle/text;" data-vis-set="material" data-vis-type="val" data-vis-name="ListLightDim">
+    <div class="vis-widget <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>">
+        <div class="vis-widget-body">
+            <div class="md-list-icon">
+                <img src="widgets/material/img/light_light_dim_100.png">
+            </div>
+            <div class="md-list-desc">
+                <div class="md-list-title mduiw-title">
+                    <%= this.data.attr('title') %>
+                </div>
+                <div class="md-list-subtitle mduiw-subtitle">
+                    <%= this.data.attr('subtitle') %>
+                </div>
+            </div>
+            <div class="md-list-value">
                 <div class="mduiw-slider">
                     <div class="sliderJQUI" id="<%= this.data.attr('wid') %>_slider" data-oid="<%= this.data.attr('oid') %>" data-oid2="<%= this.data.attr('oid-2') %>" data-oid-working="<%= this.data.attr('oid-working') %>" data-oid2-working="<%= this.data.attr('oid-2-working') %>"
                         <%=( el) -> vis.binds.jqueryui.slider(el, {min:0,max:100,step:1,inverted:false}) %> /></div>
                 </div>
             </div>
-            <div class="vis-widget-body ms-button-op my_child <%= this.data.attr('opacity-color') %>"></div>
         </div>
-
     </div>
-    <% vis.binds.material.tplMdListShutter(this.data.wid, this.view, this.data);  %>
+    <% vis.binds.material.tplMdListLightDim(this.data.wid, this.view, this.data);  %>
 </script>
 
+<!--
 <script id="tplMaListLightDim" type="text/ejs" class="vis-tpl" data-vis-prev='<div id="prev_tplMaListLightDim" style="position: relative; text-align: initial;padding: 4px ">
 				<div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121" > 
 					<img src="widgets/material/img/light_light_dim_100.png" style="width: 100px; height: 100px;"></div></div>' data-vis-attrs="oid/id;title/text;subtitle/text;Text-color[white]/color; card-icon[widgets/material/img/light_light_dim_100.png]/image;opacity-color[opac-white]/select,opac-white,opac-green,opac-purple,opac-red,opac-blue;"
@@ -149,7 +173,7 @@
 
     </div>
     <% vis.binds.material.tplMdListLightDim(this.data.wid, this.view, this.data);  %>
-</script>
+</script>-->
 
 <script id="tplMaListTemp" type="text/ejs" class="vis-tpl" data-vis-prev='<div id="prev_tplMaListTemp" style="position: relative; text-align: initial;padding: 4px ">
 				<div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121" > 
