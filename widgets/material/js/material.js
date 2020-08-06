@@ -69,6 +69,36 @@ $.extend(true, systemDictionary, {
         "en": "Text Color",
         "de": "Textfarbe",
         "ru": "na"
+    },
+    "opac-white": {
+        "en": "white opacity",
+        "de": "Transparenz Weiss",
+        "ru": "na"
+    },
+    "opac-red": {
+        "en": "Red opacity",
+        "de": "Transparenz Rot",
+        "ru": "na"
+    },
+    "opac-blue": {
+        "en": "blue opacity",
+        "de": "Transparenz Blau",
+        "ru": "na"
+    },
+    "opac-purple": {
+        "en": "purple opacity",
+        "de": "Transparenz Lila",
+        "ru": "na"
+    },
+    "opac-green": {
+        "en": "green opacity",
+        "de": "Transparenz Grün",
+        "ru": "na"
+    },
+    "opacity-color": {
+        "en": "opacity color",
+        "de": "Transparenz Farbe",
+        "ru": "na"
     }
 });
 
