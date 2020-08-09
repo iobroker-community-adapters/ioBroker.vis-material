@@ -399,10 +399,10 @@ vis.binds.material = {
             }, 100);
         }
 
-        function update(state) {
-            var src = 'widgets/material/img/light_light_dim_' + Math.ceil(state / 10) + '0.png';
-            $div.find('.md-list-icon').find('img').attr('src', src);
-        }
+        /*   function update(state) {
+            //   var src = 'widgets/material/img/light_light_dim_' + Math.ceil(state / 10) + '0.png';
+               $div.find('.md-list-icon').find('img').attr('src', src);
+           }*/
 
         /* if (!vis.editMode) {
             var $this = $('#' + widgetID + '_slider');
