@@ -409,17 +409,17 @@ vis.binds.material = {
             console.log('Maximum : ' + data.attr('max'));
             console.log('state : ' + state);*/
             var medium = parseInt(data.attr('min')) + parseInt(drittel);
-            var warm = parseInt(data.attr('max')) - parseInt(drittel);
+            var cold = parseInt(data.attr('max')) - parseInt(drittel);
             var src;
             if (state >= data.attr('min') && state < medium) {
-                console.log('kaltweiss : min -> ' + data.attr('min') + " state -> " + state + " medium ->" + medium);
-                src = srcCold;
-            } else if (state >= medium && state < warm) {
+                console.log('warmweiss : min -> ' + data.attr('min') + " state -> " + state + " medium ->" + medium);
+                src = srcWarm;
+            } else if (state >= medium && state < cold) {
                 console.log('medium: min -> ' + data.attr('min') + " state -> " + state + " medium ->" + medium);
                 src = srcMedium;
-            } else if (state >= warm && state <= data.attr('max')) {
-                console.log('warmweiss: max -> ' + data.attr('max') + " state -> " + state + " medium ->" + warm);
-                src = srcWarm;
+            } else if (state >= cold && state <= data.attr('max')) {
+                console.log('kaltweiss: max -> ' + data.attr('max') + " state -> " + state + " cold ->" + cold);
+                src = srcCold;
             } else {
                 console.log('Fehler');
                 src = 'Fehler';
