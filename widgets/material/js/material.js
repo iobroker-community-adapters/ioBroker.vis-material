@@ -387,7 +387,7 @@ vis.binds.material = {
             update(vis.states[data.oid + '.val']);
         }
     },
-    tplMdListLightKelvinNew: function(widgetID, view, data) {
+    tplMdListLightKelvin: function(widgetID, view, data) {
         const srcOff = 'widgets/material/img/light_light_dim_00.png';
         const srcOn = 'widgets/material/img/light_light_dim_100.png';
         var $div = $('#' + widgetID);
@@ -395,7 +395,7 @@ vis.binds.material = {
         // if nothing found => wait
         if (!$div.length) {
             return setTimeout(function() {
-                vis.binds.material.tplMdListLightKelvinNew(widgetID, view, data);
+                vis.binds.material.tplMdListLightKelvin(widgetID, view, data);
             }, 100);
         }
 
