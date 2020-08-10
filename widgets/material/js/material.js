@@ -366,6 +366,7 @@ vis.binds.material = {
 
         function update(state) {
             var drittel = (data.attr('max') - data.attr('min')) / 3;
+            console.log("ein Drittel ist: " + drittel);
             var src = 'widgets/material/img/light_light_dim_' + Math.ceil(state / 10) + '0.png';
             $div.find('.md-list-icon').find('img').attr('src', src);
         }
