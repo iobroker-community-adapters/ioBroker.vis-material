@@ -411,12 +411,18 @@ vis.binds.material = {
             var medium = data.attr('min') + drittel;
             var warm = data.attr('max') - drittel;
             var src;
-            if (state < medium) {
+            if (state >= data.attr('min') && state < medium) {
+                console.log('kaltweiss');
                 src = srcWarm;
-            } else if (state < warm) {
+            } else if (state >= medium && state < warm) {
+                console.log('medium');
                 src = srcMedium;
-            } else {
+            } else if (state >= warm && state <= data.attr('max')) {
+                console.log('warmweiss');
                 src = srcWarm;
+            } else {
+                console.log('Fehler');
+                src = 'Fehler';
             }
             $div.find('.md-list-icon').find('img').attr('src', src);
         }
