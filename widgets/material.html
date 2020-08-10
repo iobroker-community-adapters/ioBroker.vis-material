@@ -307,8 +307,8 @@ data-vis-name="ListLightKelvin">
     </div>
     <div class="md-list-value"  style="color: <%= this.data.attr('Text-color') %>;">
         <div class="mduiw-slider" >
-            <div class="sliderJQUI" id="<%= this.data.attr('wid') %>_slider" data-oid="<%= this.data.attr('oid') %>" data-oid2="<%= this.data.attr('oid-2') %>" data-oid-working="<%= this.data.attr('oid-working') %>"  data-oid2-working="<%= this.data.attr('oid-2-working') %>"<%= (el) -> vis.binds.jqueryui.slider(el, {min:this.data.attr('min-temperature'),max:this.data.attr('mac-temperature'),step:100,inverted:false}) %> /></div>
-        </div>
+            <div class="sliderJQUI" id="<%= this.data.attr('wid') %>_slider" data-oid="<%= this.data.attr('oid') %>" data-oid2="<%= this.data.attr('oid-2') %>" data-oid-working="<%= this.data.attr('oid-working') %>"  data-oid2-working="<%= this.data.attr('oid-2-working') %>"<%= (el) -> vis.binds.jqueryui.slider(el, {min: parseFloat(data.min-temperature),max:parseFloat(data.max-temperature),step:100,inverted:false}) %> /></div>
+        </div> 
     </div>
     <div class="vis-widget-body ms-button-op my_child <%= this.data.attr('opacity-color') %>" ></div>
 </div>
