@@ -413,7 +413,7 @@ vis.binds.material = {
             var src;
             if (state >= data.attr('min') && state < medium) {
                 console.log('kaltweiss : min -> ' + data.attr('min') + " state -> " + state + " medium ->" + medium);
-                src = srcWarm;
+                src = srcCold;
             } else if (state >= medium && state < warm) {
                 console.log('medium: min -> ' + data.attr('min') + " state -> " + state + " medium ->" + medium);
                 src = srcMedium;
