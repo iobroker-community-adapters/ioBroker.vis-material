@@ -391,7 +391,7 @@ vis.binds.material = {
         const srcOff = 'widgets/material/img/light_light_dim_00.png';
         const srcOn = 'widgets/material/img/light_light_dim_100.png';
         var $div = $('#' + widgetID);
-
+        console.log('LightKelvin called');
         // if nothing found => wait
         if (!$div.length) {
             return setTimeout(function() {
