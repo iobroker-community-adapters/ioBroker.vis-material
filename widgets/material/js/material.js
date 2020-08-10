@@ -408,8 +408,8 @@ vis.binds.material = {
             console.log("Minimum : " + data.attr('min'));
             console.log('Maximum : ' + data.attr('max'));
             console.log('state : ' + state);*/
-            var medium = data.attr('min') + drittel;
-            var warm = data.attr('max') - drittel;
+            var medium = parseInt(data.attr('min')) + parseInt(drittel);
+            var warm = parseInt(data.attr('max')) - parseInt(drittel);
             var src;
             if (state >= data.attr('min') && state < medium) {
                 console.log('kaltweiss : min -> ' + data.attr('min') + " state -> " + state + " medium ->" + medium);
