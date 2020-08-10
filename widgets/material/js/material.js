@@ -404,14 +404,16 @@ vis.binds.material = {
 
         function update(state) {
             var drittel = (data.attr('max') - data.attr('min')) / 3;
-            console.log("ein Drittel ist: " + drittel + " von  :" + data.attr('max'));
+            /*console.log("ein Drittel ist: " + drittel + " von  :" + data.attr('max'));
             console.log("Minimum : " + data.attr('min'));
             console.log('Maximum : ' + data.attr('max'));
-            console.log('state : ' + state);
+            console.log('state : ' + state);*/
+            var medium = data.attr('min') + drittel;
+            var warm = data.attr('max') - drittel;
             var src;
-            if (state < data.attr('min') + drittel) {
+            if (state < medium) {
                 src = srcWarm;
-            } else if (state < data.attr('min') + 2 * drittel) {
+            } else if (state < warm) {
                 src = srcMedium;
             } else {
                 src = srcWarm;
