@@ -412,13 +412,13 @@ vis.binds.material = {
             var warm = data.attr('max') - drittel;
             var src;
             if (state >= data.attr('min') && state < medium) {
-                console.log('kaltweiss');
+                console.log('kaltweiss : min -> ' + data.attr('min') + " state -> " + state + " medium ->" + medium);
                 src = srcWarm;
             } else if (state >= medium && state < warm) {
-                console.log('medium');
+                console.log('medium: min -> ' + data.attr('min') + " state -> " + state + " medium ->" + medium);
                 src = srcMedium;
             } else if (state >= warm && state <= data.attr('max')) {
-                console.log('warmweiss');
+                console.log('warmweiss: max -> ' + data.attr('max') + " state -> " + state + " medium ->" + warm);
                 src = srcWarm;
             } else {
                 console.log('Fehler');
