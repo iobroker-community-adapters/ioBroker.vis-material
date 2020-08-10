@@ -288,7 +288,7 @@
 <script id="tplMaListLightKelvin" type="text/ejs" class="vis-tpl" data-vis-prev='<div id="prev_tplMaListLightKelvin" style="position: relative; text-align: initial;padding: 4px ">
     <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121" > 
         <img src="widgets/material/img/light_light_dim_100.png" style="width: 100px; height: 100px;"></div></div>'
-data-vis-attrs="oid/id;title/text;subtitle/text;Text-color[white]/color; card-icon[widgets/material/img/light_light_dim_100.png]/image;opacity-color[opac-white]/select,opac-white,opac-green,opac-purple,opac-red,opac-blue;min-temperature[2700]/number;max-temperature[6500]/number;" 
+data-vis-attrs="oid/id;title/text;subtitle/text;Text-color[white]/color; card-icon[widgets/material/img/light_light_dim_100.png]/image;opacity-color[opac-white]/select,opac-white,opac-green,opac-purple,opac-red,opac-blue;min[2700]/number;max[6500]/number;" 
 data-vis-set="material" 
 data-vis-type="val"
 data-vis-name="ListLightKelvin">
@@ -307,7 +307,7 @@ data-vis-name="ListLightKelvin">
     </div>
     <div class="md-list-value"  style="color: <%= this.data.attr('Text-color') %>;">
         <div class="mduiw-slider" >
-            <div class="sliderJQUI" id="<%= this.data.attr('wid') %>_slider" data-oid="<%= this.data.attr('oid') %>" data-oid2="<%= this.data.attr('oid-2') %>" data-oid-working="<%= this.data.attr('oid-working') %>"  data-oid2-working="<%= this.data.attr('oid-2-working') %>"<%= (el) -> vis.binds.jqueryui.slider(el, {min: parseFloat(data.min-temperature),max:parseFloat(data.max-temperature),step:100,inverted:false}) %> /></div>
+            <div class="sliderJQUI" id="<%= this.data.attr('wid') %>_slider" data-oid="<%= this.data.attr('oid') %>" data-oid2="<%= this.data.attr('oid-2') %>" data-oid-working="<%= this.data.attr('oid-working') %>"  data-oid2-working="<%= this.data.attr('oid-2-working') %>"<%= (el) -> vis.binds.jqueryui.slider(el, {min: parseFloat(data.min),max:parseFloat(data.max),step:100,inverted:false}) %> /></div>
         </div> 
     </div>
     <div class="vis-widget-body ms-button-op my_child <%= this.data.attr('opacity-color') %>" ></div>

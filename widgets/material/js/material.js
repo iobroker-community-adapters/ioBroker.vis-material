@@ -391,6 +391,8 @@ vis.binds.material = {
         const srcOff = 'widgets/material/img/light_light_dim_00.png';
         const srcOn = 'widgets/material/img/light_light_dim_100.png';
         var $div = $('#' + widgetID);
+        var min = $this.attr('min');
+        var max = $this.attr('max');
 
         // if nothing found => wait
         if (!$div.length) {
