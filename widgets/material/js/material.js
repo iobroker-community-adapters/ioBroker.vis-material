@@ -395,7 +395,7 @@ vis.binds.material = {
         // if nothing found => wait
         if (!$div.length) {
             return setTimeout(function() {
-                vis.binds.material.tplMdListLightDim(widgetID, view, data);
+                vis.binds.material.tplMdListLightKelvin(widgetID, view, data);
             }, 100);
         }
 
