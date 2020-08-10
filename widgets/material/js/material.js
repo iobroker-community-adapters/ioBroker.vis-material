@@ -403,7 +403,7 @@ vis.binds.material = {
 
         function update(state) {
             //   var src = 'widgets/material/img/light_light_dim_' + Math.ceil(state / 10) + '0.png';
-            var src = 'widgets/material/img/light_light_dim_100.png';
+            var src = srcOn;
             $div.find('.md-list-icon').find('img').attr('src', src);
         }
 
