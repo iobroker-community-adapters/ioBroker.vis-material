@@ -405,6 +405,9 @@ vis.binds.material = {
         function update(state) {
             var drittel = (data.attr('max') - data.attr('min')) / 3;
             console.log("ein Drittel ist: " + drittel + " von  :" + data.attr('max'));
+            console.log("Minimum :" + data.attr('min'));
+            console.log('Maximum' + data.attr('max'));
+            console.log('state : ' + state);
             var src;
             if (state < data.attr('min') + drittel) {
                 src = srcWarm;
