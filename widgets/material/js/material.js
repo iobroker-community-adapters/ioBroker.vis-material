@@ -389,8 +389,10 @@ vis.binds.material = {
         }
     },
     tplMdListLightKelvin: function(widgetID, view, data) {
-        const srcOff = 'widgets/material/img/light_light_dim_00.png';
-        const srcOn = 'widgets/material/img/light_light_dim_100.png';
+        const srcCold = 'widgets/material/img/fts_kelvin_kaltweiss.png';
+        const srcMedium = 'widgets/material/img/fts_kelvin_mittel.png';
+        const srcWarm = 'widgets/material/img/fts_kelvin_warmweiss.png';
+
         var $div = $('#' + widgetID);
         console.log('LightKelvin called');
         // if nothing found => wait
@@ -403,7 +405,14 @@ vis.binds.material = {
         function update(state) {
             var drittel = (data.attr('max') - data.attr('min')) / 3;
             console.log("ein Drittel ist: " + drittel + " von  :" + data.attr('max'));
-            var src = srcOn;
+            var src;
+            if (state < data.attr('min') + drittel) {
+                src = srcWarm;
+            } else if (state < data.attr('min') + 2 * drittel) {
+                src = srcMedium;
+            } else {
+                src = srcWarm;
+            }
             $div.find('.md-list-icon').find('img').attr('src', src);
         }
 
