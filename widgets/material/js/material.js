@@ -330,8 +330,14 @@ vis.binds.material = {
         }
 
         function update(state) {
-
-            var src = 'widgets/material/img/fts_shutter_' + Math.ceil(state / 10) + '0.png';
+            var percent = Math.ceil(state / 10);
+            var name;
+            if (data.attr('inverted')) {
+                name = 10 - parseInt(percent);
+            } else {
+                name = percent;
+            }
+            var src = 'widgets/material/img/fts_shutter_' + percent + '0.png';
             $div.find('.md-list-icon').find('img').attr('src', src);
         }
 
