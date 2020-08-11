@@ -22,6 +22,12 @@ https://github.com/Uhula/ioBroker-Material-Design-Style
 
 ## Changelog
 
+### 0.3.0
+- (EdgarM73) WindowShutter Widget has been re-created due to unknown error. Old widget is most likey not working anymore.
+             New Color Temperature Widget ( Kelvin ) has been created
+             new widgets placed are now standard 350px instead of 100% which made no sense ;)
+             minor bugfixes and refactoring
+             
 ### 0.2.0
 - (EdgarM73) widgets are now customizable, text-color, icon, color of overlay
 

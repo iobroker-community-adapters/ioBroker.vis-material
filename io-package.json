@@ -1,8 +1,22 @@
 {
     "common": {
         "name": "vis-material",
-        "version": "0.2.0",
+        "version": "0.3.0",
         "news": {
+            "0.3.0": {
+                "feat: added Color Temperature widget, recreated Shutter Widget": {
+                    "en": "feat: added Color Temperature widget, recreated Shutter Widget",
+                    "de": "feat: Farbtemperatur-Widget hinzugefügt, Shutter-Widget neu erstellt",
+                    "ru": "feat: добавлен виджет цветовой температуры, воссоздан виджет Shutter",
+                    "pt": "talento: widget de temperatura de cor adicionado, widget de obturador recriado",
+                    "nl": "feat: Kleurtemperatuurwidget toegevoegd, Shutter Widget opnieuw gemaakt",
+                    "fr": "exploit: widget de température de couleur ajouté, widget d'obturation recréé",
+                    "it": "feat: aggiunto il widget della temperatura del colore, ricreato il widget dell'otturatore",
+                    "es": "hazaña: widget de temperatura de color agregado, widget de obturador recreado",
+                    "pl": "feat: dodano widżet Temperatury barwowej, odtworzony Widget Migawki",
+                    "zh-cn": "壮举：添加了“色温”小部件，重新创建了“快门”小部件"
+                }
+            },
             "0.2.0": {
                 "en": "feat: all items are now more customizable, e.g. Text-color, own Icon, colored opacity",
                 "de": "feat: Alle Items sind nun besser anpassbar, z.b. Textfarbe, eigene Icons, Auswahl an farbiger opacity",
