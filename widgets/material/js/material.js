@@ -343,7 +343,7 @@ vis.binds.material = {
                 name = percent;
             }
 
-            var src = 'widgets/material/img/fts_shutter_' + percent + '0.png';
+            var src = 'widgets/material/img/fts_shutter_' + name + '0.png';
             console.log(' name : ' + name + " Icon : " + src);
             $div.find('.md-list-icon').find('img').attr('src', src);
         }
