@@ -332,12 +332,19 @@ vis.binds.material = {
         function update(state) {
             var percent = Math.ceil(state / 10);
             var name;
-            if (data.attr('inverted')) {
+
+            console.log("Status: " + state);
+
+            if (data.attr('inverted') == true) {
+
                 name = 10 - parseInt(percent);
+                console.log('Inverted -> name: ' + name);
             } else {
                 name = percent;
             }
+
             var src = 'widgets/material/img/fts_shutter_' + percent + '0.png';
+            console.log(' name : ' + name + " Icon : " + src);
             $div.find('.md-list-icon').find('img').attr('src', src);
         }
 
