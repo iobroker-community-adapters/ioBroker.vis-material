@@ -260,7 +260,7 @@
     data-vis-set="material" 
     data-vis-type="val"
 	data-vis-name="ListLightDim">
-	<div class="vis-widget <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>"  >
+	<div class="vis-widget <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>" >
 			<div class="vis-widget-body my_child  " >
 				<div class="md-list-icon">
 					<img src="<%= this.data.attr('card-icon') %>">
@@ -279,7 +279,12 @@
 					</div>
 				</div>
 				<div class="vis-widget-body ms-button-op my_child <%= this.data.attr('opacity-color') %>" ></div>
-			</div>LightKelvin
+			</div>
+			
+		</div>
+		<% vis.binds.material.tplMdListLightDim(this.data.wid, this.view, this.data);  %>
+</script>
+
 <script id="tplMaListLightKelvin" type="text/ejs" class="vis-tpl" data-vis-prev='<div id="prev_tplMaListLightKelvin" style="position: relative; text-align: initial;padding: 4px ">
     <div class="vis-widget_prev " style="width: 100px; height: 100px; padding:2px; background-color: #212121" > 
         <img src="widgets/material/img/fts_kelvin_warmweiss.png" style="width: 100px; height: 100px;"></div></div>'
@@ -319,7 +324,7 @@ data-vis-attrs="oid/id;title/text;subtitle/text;Text-color[white]/color; card-ic
 data-vis-set="material" 
 data-vis-type="val"
 data-vis-name="ListRollo"> 
-<div class="vis-widget <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>" style="width:350px;">
+<div class="vis-widget <%== this.data.attr('class') %> md-list" id="<%= this.data.attr('wid') %>">
 <div class="vis-widget-body my_child  " >
     <div class="md-list-icon">
         <img src="<%= this.data.attr('card-icon') %>">
