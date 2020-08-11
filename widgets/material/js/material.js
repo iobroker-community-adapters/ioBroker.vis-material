@@ -318,41 +318,6 @@ vis.binds.material = {
         }
     },
     tplMdListWindowShutter: function(widgetID, view, data) {
-        const srcOff = 'widgets/material/img/fts_shutter_00.png';
-        const srcOn = 'widgets/material/img/fts_shutter_100.png';
-        var $div = $('#' + widgetID);
-
-        // if nothing found => wait
-        if (!$div.length) {
-            return setTimeout(function() {
-                vis.binds.material.tplMdListWindowShutter(widgetID, view, data);
-            }, 100);
-        }
-
-        function update(state) {
-            var src = 'widgets/material/img/fts_shutter_' + Math.ceil(state / 10) + '0.png';
-            $div.find('.md-list-icon').find('img').attr('src', src);
-        }
-
-        /* if (!vis.editMode) {
-            var $this = $('#' + widgetID + '_slider');
-            $this.change(function () {
-                var $this_ = $(this);
-                vis.setValue($this_.data('oid'), $this_.prop('checked'));
-            });
-        } */
-
-        if (data.oid) {
-            // subscribe on updates of value
-            vis.states.bind(data.oid + '.val', function(e, newVal, oldVal) {
-                update(newVal);
-            });
-
-            // set current value
-            update(vis.states[data.oid + '.val']);
-        }
-    },
-    tplMdListRollo: function(widgetID, view, data) {
         const srcOff = 'widgets/material/img/light_light_dim_00.png';
         const srcOn = 'widgets/material/img/light_light_dim_100.png';
         var $div = $('#' + widgetID);
@@ -360,7 +325,7 @@ vis.binds.material = {
         // if nothing found => wait
         if (!$div.length) {
             return setTimeout(function() {
-                vis.binds.material.tplMdListRollo(widgetID, view, data);
+                vis.binds.material.tplMdListWindowShutter(widgetID, view, data);
             }, 100);
         }
 
