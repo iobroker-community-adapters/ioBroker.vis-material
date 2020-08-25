@@ -275,6 +275,11 @@ vis.binds.material = {
     },
     tplMdListHumid: function(widgetID, view, data) {
         var $div = $('#' + widgetID);
+        const $colorize = data.attr('colorizeByTemp');
+        const $low = data.attr('below');
+        const $normal = data.attr('normal');
+        const $high = data.attr('above');
+        const $original_class = data.attr('opacity-color');
         // if nothing found => wait
         if (!$div.length) {
             return setTimeout(function() {
