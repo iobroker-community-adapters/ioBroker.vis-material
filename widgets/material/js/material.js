@@ -247,7 +247,7 @@ vis.binds.material = {
                 $div.find('.md-list-value').html(state.toFixed(1) + ' °C');
             }
             if (state <= $low) {
-                console.log('Temperatur ist niedrig');
+                console.log('Temperatur ist niedrig ');
                 $div.find('.my_child').removeClass('opac-white opac-red opac-below opac-above').addClass('opac-below');
             }
             if (state >= $normal) {
