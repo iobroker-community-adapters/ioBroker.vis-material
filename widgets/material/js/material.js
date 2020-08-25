@@ -250,12 +250,12 @@ vis.binds.material = {
             if ($colorize == true) {
                 if (state <= $low) {
                     console.log('Temperatur ist niedrig ');
-                    $div.find('.my_child').removeClass('opac-white opac-green opac-purple opac-red opac-blue opac-below opac-above').addClass('opac-below');
+                    $div.find('.overlay').removeClass('opac-white opac-green opac-purple opac-red opac-blue opac-below opac-above').addClass('opac-below');
                 } else if (state > $normal && state < $high) {
-                    $div.find('.my_child').removeClass('opac-white opac-green opac-purple opac-red opac-blue opac-below opac-above').addClass($original_class);
+                    $div.find('.overlay').removeClass('opac-white opac-green opac-purple opac-red opac-blue opac-below opac-above').addClass($original_class);
                 } else if (state >= $high) {
                     console.log('Temperatur ist hoch');
-                    $div.find('.my_child').removeClass('opac-white opac-green opac-purple opac-red opac-blue opac-below opac-above').addClass('opac-above');
+                    $div.find('.overlay').removeClass('opac-white opac-green opac-purple opac-red opac-blue opac-below opac-above').addClass('opac-above');
                 } else {
                     console.log('Fehler in Temperatur berechnung');
                 }
@@ -293,6 +293,19 @@ vis.binds.material = {
         function update(state) {
             if (typeof state === 'number') {
                 $div.find('.md-list-value').html(state.toFixed(1) + ' %');
+            }
+            if ($colorize == true) {
+                if (state <= $low) {
+                    console.log('Temperatur ist niedrig ');
+                    $div.find('.overlay').removeClass('opac-white opac-green opac-purple opac-red opac-blue opac-below opac-above').addClass('opac-below');
+                } else if (state > $normal && state < $high) {
+                    $div.find('.overlay').removeClass('opac-white opac-green opac-purple opac-red opac-blue opac-below opac-above').addClass($original_class);
+                } else if (state >= $high) {
+                    console.log('Temperatur ist hoch');
+                    $div.find('.overlay').removeClass('opac-white opac-green opac-purple opac-red opac-blue opac-below opac-above').addClass('opac-above');
+                } else {
+                    console.log('Fehler in Temperatur berechnung');
+                }
             }
         }
 
