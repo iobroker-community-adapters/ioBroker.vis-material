@@ -226,6 +226,7 @@ vis.binds.material = {
         const $low = data.attr('below');
         const $normal = data.attr('normal');
         const $high = data.attr('above');
+        const $original_class = data.attr('opacity-color');
 
         // if nothing found => wait
         if (!$div.length) {
@@ -249,11 +250,14 @@ vis.binds.material = {
             if ($colorize == true) {
                 if (state <= $low) {
                     console.log('Temperatur ist niedrig ');
-                    $div.find('.my_child').removeClass('opac-white opac-red opac-below opac-above').addClass('opac-below');
-                }
-                if (state >= $normal) {
+                    $div.find('.my_child').removeClass('opac-white opac-green opac-purple opac-red opac-blue opac-below opac-above').addClass('opac-below');
+                } else if (state > $normal && state < $above) {
+                    $div.find('.my_child').removeClass('opac-white opac-green opac-purple opac-red opac-blue opac-below opac-above').addClass($original_class);
+                } else if (state >= $above) {
                     console.log('Temperatur ist hoch');
-                    $div.find('.my_child').removeClass('opac-white opac-red opac-below opac-above').addClass('opac-above');
+                    $div.find('.my_child').removeClass('opac-white opac-green opac-purple opac-red opac-blue opac-below opac-above').addClass('opac-above');
+                } else {
+                    console.log('Fehler in Temperatur berechnung');
                 }
             }
 
