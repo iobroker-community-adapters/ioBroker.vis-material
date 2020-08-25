@@ -247,11 +247,9 @@ vis.binds.material = {
                 $div.find('.md-list-value').html(state.toFixed(1) + ' °C');
             }
             if (state <= $low) {
-                $div.find('.my_child').css('color', 'lightblue');
-                $div.find('.my_child').css('opacity', '0.5');
+                $div.find('.my_child').removeClass('opac-white opac-red opac-below opac-above').addClass('opac-below');
             } else if (state > $normal) {
-                $div.find('.my_child').css('color', 'darkred');
-                $div.find('.my_child').css('opacity', '0.5');
+                $div.find('.my_child').removeClass('opac-white opac-red opac-below opac-above').addClass('opac-above');
             }
 
 
