@@ -247,8 +247,11 @@ vis.binds.material = {
                 $div.find('.md-list-value').html(state.toFixed(1) + ' °C');
             }
             if (state <= $low) {
+                console.log('Temperatur ist niedrig');
                 $div.find('.my_child').removeClass('opac-white opac-red opac-below opac-above').addClass('opac-below');
-            } else if (state > $normal) {
+            }
+            if (state >= $normal) {
+                console.log('Temperatur ist hoch');
                 $div.find('.my_child').removeClass('opac-white opac-red opac-below opac-above').addClass('opac-above');
             }
 
