@@ -251,9 +251,9 @@ vis.binds.material = {
                 if (state <= $low) {
                     console.log('Temperatur ist niedrig ');
                     $div.find('.my_child').removeClass('opac-white opac-green opac-purple opac-red opac-blue opac-below opac-above').addClass('opac-below');
-                } else if (state > $normal && state < $above) {
+                } else if (state > $normal && state < $high) {
                     $div.find('.my_child').removeClass('opac-white opac-green opac-purple opac-red opac-blue opac-below opac-above').addClass($original_class);
-                } else if (state >= $above) {
+                } else if (state >= $high) {
                     console.log('Temperatur ist hoch');
                     $div.find('.my_child').removeClass('opac-white opac-green opac-purple opac-red opac-blue opac-below opac-above').addClass('opac-above');
                 } else {
