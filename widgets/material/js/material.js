@@ -249,7 +249,7 @@ vis.binds.material = {
             if (state <= $low) {
                 $div.find('.my_child').css('color', 'lightblue');
                 $div.find('.my_child').css('opacity', '0.5');
-            } else if (state > normal) {
+            } else if (state > $normal) {
                 $div.find('.my_child').css('color', 'darkred');
                 $div.find('.my_child').css('opacity', '0.5');
             }
