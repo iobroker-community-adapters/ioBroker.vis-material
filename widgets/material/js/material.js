@@ -99,6 +99,54 @@ $.extend(true, systemDictionary, {
         "en": "opacity color",
         "de": "Transparenz Farbe",
         "ru": "na"
+    },
+    "colorizeByTemp": {
+        "en": "colorize By Temp",
+        "de": "einfärben durch Temp",
+        "ru": "раскрасить по температуре",
+        "pt": "colorir por Temp",
+        "nl": "inkleuren door temp",
+        "fr": "coloriser par température",
+        "it": "colorize By Temp",
+        "es": "colorear por temperatura",
+        "pl": "koloruj według temp",
+        "zh-cn": "通过临时着色"
+    },
+    "below": {
+        "en": "below",
+        "de": "niedriger",
+        "ru": "ниже",
+        "pt": "abaixo",
+        "nl": "hieronder",
+        "fr": "au dessous de",
+        "it": "sotto",
+        "es": "abajo",
+        "pl": "poniżej",
+        "zh-cn": "下面"
+    },
+    "normal": {
+        "en": "normal",
+        "de": "normal",
+        "ru": "нормальный",
+        "pt": "normal",
+        "nl": "normaal",
+        "fr": "Ordinaire",
+        "it": "normale",
+        "es": "normal",
+        "pl": "normalna",
+        "zh-cn": "正常"
+    },
+    "above": {
+        "en": "above",
+        "de": "über",
+        "ru": "выше",
+        "pt": "acima",
+        "nl": "bovenstaande",
+        "fr": "au dessus",
+        "it": "sopra",
+        "es": "encima",
+        "pl": "powyżej",
+        "zh-cn": "以上"
     }
 });
 
@@ -174,6 +222,10 @@ vis.binds.material = {
     },
     tplMdListTemp: function(widgetID, view, data) {
         var $div = $('#' + widgetID);
+        const $colorize = data.attr('colorizeByTemp');
+        const $low = data.attr('below');
+        const $normal = data.attr('normal');
+        const $high = data.attr('above');
 
         // if nothing found => wait
         if (!$div.length) {
@@ -194,6 +246,15 @@ vis.binds.material = {
             if (typeof state === 'number') {
                 $div.find('.md-list-value').html(state.toFixed(1) + ' °C');
             }
+            if (state <= $low) {
+                $div.find('.my_child').css('color', 'lightblue');
+                $div.find('.my_child').css('opacity', '0.5');
+            } else if (state > normal) {
+                $div.find('.my_child').css('color', 'darkred');
+                $div.find('.my_child').css('opacity', '0.5');
+            }
+
+
         }
 
         if (data.oid) {
