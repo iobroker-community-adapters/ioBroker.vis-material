@@ -63,9 +63,9 @@
         "icon": "material.png",
         "enabled": true,
         "mode": "once",
-        "extIcon": "https://raw.githubusercontent.com/nisiode/ioBroker.vis-material/master/admin/material.png",
+        "extIcon": "https://raw.githubusercontent.com/iobroker-community-adapters/ioBroker.vis-material/master/admin/material.png",
         "keywords": ["material", "vis", "GUI", "graphical", "scada"],
-        "readme": "https://github.com/nisiode/ioBroker.vis-material/blob/master/README.md",
+        "readme": "https://github.com/iobroker-community-adapters/ioBroker.vis-material/blob/master/README.md",
         "authors": [
             "nisiode <nisio.air@gmail.com>"
         ],
