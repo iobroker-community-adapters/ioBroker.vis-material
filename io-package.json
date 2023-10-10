@@ -2,7 +2,7 @@
     "common": {
         "name": "vis-material",
         "version": "0.1.5",
-        "news": {  
+        "news": {
             "0.1.5": {
                 "en": "feat: new window shutter widget",
                 "de": "feat: neues Fenster-Rollladen widget",
@@ -32,7 +32,7 @@
                 "en": "feat: include material css from uhula",
                 "de": "feat: include material css from uhula",
                 "ru": "feat: include material css from uhula"
-            },   
+            },
             "0.0.1": {
                 "en": "initial adapter",
                 "de": "Initiale Version",
@@ -41,6 +41,14 @@
                 "fr": "Version initiale",
                 "nl": "Eerste release"
             }
+        },
+        "titleLang": {
+            "en": "material widgets",
+            "de": "material Widgets",
+            "ru": "material виджеты",
+            "pt": "widgets de material",
+            "fr": "widgets matériels",
+            "nl": "materiaal widgets"
         },
         "title": "material widgets",
         "desc": {
@@ -64,11 +72,16 @@
         "localLink": "%web_protocol%://%ip%:%web_port%/vis/edit.html",
         "license": "MIT",
         "dependencies": ["vis"],
+        "adminUI": {
+            "config": "none"
+        },
         "onlyWWW": true,
         "noConfig": true,
         "singleton": true,
         "type": "visualization-widgets",
-        "restartAdapters": ["vis"]
+        "restartAdapters": ["vis"],
+        "connectionType": "none",
+        "dataSource": "none"
     },
     "native": {
         "dependencies": []

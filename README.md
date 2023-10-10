@@ -1,6 +1,5 @@
 ![Logo](admin/material.png)
 # ioBroker.vis-material
-============
 
 ![Number of Installations](http://iobroker.live/badges/vis-material-installed.svg) ![Number of Installations](http://iobroker.live/badges/vis-material-stable.svg) [![NPM version](http://img.shields.io/npm/v/iobroker.vis-material.svg)](https://www.npmjs.com/package/iobroker.vis-material)
 [![Downloads](https://img.shields.io/npm/dm/iobroker.vis-material.svg)](https://www.npmjs.com/package/iobroker.vis-material)
@@ -19,9 +18,7 @@ https://github.com/Uhula/ioBroker-Material-Design-Style
 
 ![Example](img/widgets.png)
 
-
 ## Changelog
-
 ### 0.1.5 (2018-07-11)
 - (pix) feat: new window shutter widget
 
@@ -44,5 +41,5 @@ https://github.com/Uhula/ioBroker-Material-Design-Style
 - (nisio) Initial version for internal testing
 
 ## License
- Copyright (c) 2018-2018 nisiode
+ Copyright (c) 2018-2023 nisiode
  MIT
