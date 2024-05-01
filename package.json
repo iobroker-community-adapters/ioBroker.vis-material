@@ -29,7 +29,7 @@
   "devDependencies": {
     "mocha": "^10.2.0",
     "chai": "^4.3.10",
-    "@iobroker/legacy-testing": "^1.0.0"
+    "@iobroker/legacy-testing": "^1.0.12"
   },
   "bugs": {
     "url": "https://github.com/iobroker-community-adapters/ioBroker.vis-material/issues"
