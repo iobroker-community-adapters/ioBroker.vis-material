@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "vis-material",
-    "version": "0.2.0-alpha.0",
+    "version": "0.2.0",
     "news": {
+      "0.2.0": {
+        "en": "Some adapter settings have been fixed.\nSome adaption for a new release have been applied.\nDependencies have been updated.\nfeat: new window shutter widget\nfeat: new humidity widget added",
+        "de": "Einige Adaptereinstellungen wurden korrigiert.\nAnpassungen für eine neue Release wurden vorgenommen.\nAbhängigkeiten wurden aktualisiert.\nfeat: neues Jalousien-Widget\nfeat: neues Luftfeuchtigkeits-Widget hinzugefügt",
+        "ru": "Некоторые настройки адаптера были исправлены.\nБыли применены некоторые приспособления для нового выпуска.\nЗависимость была обновлена.\nподвиг: новый виджет затвора окон\nподвиг: добавлен новый виджет влажности",
+        "pt": "Algumas configurações do adaptador foram corrigidas.\nAlgumas adaptações para uma nova versão foram aplicadas.\nAs dependências foram atualizadas.\nfeat: novo widget do obturador da janela\nfeat: novo widget de umidade adicionado",
+        "nl": "Sommige adapterinstellingen zijn gerepareerd.\nEr is enige aanpassing voor een nieuwe release toegepast.\nAfhankelijkheden zijn bijgewerkt.\nfeat: nieuw venster sluiter widget\nfeat: nieuwe vochtigheid widget toegevoegd",
+        "fr": "Certains réglages de l'adaptateur ont été corrigés.\nUne certaine adaptation pour une nouvelle version a été appliquée.\nLes dépendances ont été actualisées.\nfeat: nouveau widget obturateur de fenêtre\nexploit: nouveau widget d'humidité ajouté",
+        "it": "Alcune impostazioni dell'adattatore sono state fissate.\nSono stati applicati alcuni adattamenti per una nuova release.\nLe dipendenze sono state aggiornate.\nfeat: nuovo widget di shutter finestra\nfeat: nuovo widget umidità aggiunto",
+        "es": "Se han fijado algunos ajustes de adaptador.\nSe ha aplicado alguna adaptación para una nueva versión.\nSe han actualizado las dependencias.\nnuevo widget de persiana\nnuevo widget de humedad añadido",
+        "pl": "Niektóre ustawienia adaptera zostały naprawione.\nZastosowano pewne dostosowanie do nowego wydania.\nZaktualizowano zależność.\nfeat: nowy widget migawki\nfeat: nowy widget wilgotności dodany",
+        "uk": "Деякі параметри адаптера були виправлені.\nНаведено деякі адаптації до нового релізу.\nОновлено залежність.\nfeat: новий віджет вікон\nfeat: новий віджет вологості",
+        "zh-cn": "一些适配器设置已经固定.\n已经应用了一些适应新版本的软件.\n附属关系已经更新.\n功绩: 新窗口快关部件\n功绩: 新增湿度部件"
+      },
       "0.1.3": {
         "en": "feat: new dimmer widget",
         "de": "feat: new dimmer widget",
