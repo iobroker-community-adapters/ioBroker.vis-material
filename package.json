@@ -21,6 +21,8 @@
     "GUI",
     "material vis"
   ],
+  "dependencies": {
+  },
   "devDependencies": {
     "@alcalzone/release-script": "^3.8.0",
     "@alcalzone/release-script-plugin-iobroker": "^3.7.2",
@@ -45,7 +47,6 @@
   "scripts": {
     "test": "node node_modules/mocha/bin/mocha --exit",
     "translate": "translate-adapter",
-    "release": "release-script --all"
-  },
-  "dependencies": {}
+    "release": "release-script"
+  }
 }
