@@ -1,7 +1,7 @@
 {
   "name": "iobroker.vis-material",
   "description": "material widgets for ioBroker.vis",
-  "version": "0.1.6",
+  "version": "0.2.0-alpha.0",
   "author": {
     "name": "nisiode",
     "email": "nisio.air@gmail.com"
@@ -21,8 +21,7 @@
     "GUI",
     "material vis"
   ],
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "@alcalzone/release-script": "^3.8.0",
     "@alcalzone/release-script-plugin-iobroker": "^3.7.2",
