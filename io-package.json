@@ -3,19 +3,6 @@
     "name": "vis-material",
     "version": "0.1.6",
     "news": {
-      "0.1.6": {
-        "en": "fix some adapter setting\nprepare for release\nfeat: new window shutter widget\nfeat: new humidity widget",
-        "de": "fixieren sie die adaptereinstellung\nvorbereitung auf die freigabe\nfeat: neue fensterblende widget\nfeat: neue luftfeuchtigkeit widget",
-        "ru": "исправить настройки адаптера\nподготовка к выпуску\nподвиг: новый виджет затвора окон\nподвиг: новый виджет влажности",
-        "pt": "corrigir alguma configuração do adaptador\npreparar para a liberação\nfeat: novo widget do obturador da janela\nfeat: novo widget de umidade",
-        "nl": "fix sommige adapter instelling\nbereid je voor op vrijlating\nfeat: nieuw venster sluiter widget\nfeat: nieuwe vochtigheid widget",
-        "fr": "correction du réglage de l'adaptateur\nse préparer à la libération\nfeat: nouveau widget obturateur de fenêtre\nexploit: nouveau widget d'humidité",
-        "it": "fissare alcune impostazioni dell'adattatore\nprepararsi al rilascio\nfeat: nuovo widget di shutter finestra\nfeat: nuovo widget umidità",
-        "es": "arreglar un ajuste de adaptador\nprepararse para la liberación\nnuevo widget de persiana\nhazaña: nuevo widget de humedad",
-        "pl": "naprawić ustawienia adaptera\nprzygotować się do uwolnienia\nfeat: nowy widget migawki\nfeat: nowy widget wilgotności",
-        "uk": "виправити деякі налаштування адаптера\nпідготовка до випуску\nfeat: новий віджет вікон\nfeat: новий віджет вологості",
-        "zh-cn": "修正一些适配器设置\n准备释放\n功绩: 新窗口快关部件\n功绩: 新的湿度部件"
-      },
       "0.1.3": {
         "en": "feat: new dimmer widget",
         "de": "feat: new dimmer widget",
@@ -122,15 +109,14 @@
     ],
     "readme": "https://github.com/iobroker-community-adapters/ioBroker.vis-material/blob/master/README.md",
     "authors": [
-      "nisiode <nisio.air@gmail.com>"
+      "nisiode <nisio.air@gmail.com>",
+      "iobroker-community-adapters <iobroker-community-adapters@gmx.de>"
     ],
     "licenseInformation": {
       "type": "free",
       "license": "MIT"
     },
-    "dependencies": [
-      "vis"
-    ],
+    "dependencies": [],
     "adminUI": {
       "config": "none"
     },
