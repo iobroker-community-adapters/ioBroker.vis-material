@@ -22,12 +22,14 @@ https://github.com/Uhula/ioBroker-Material-Design-Style
 -->
 
 ## Changelog
-### 0.1.6 (2025-01-12)
 
-- (oweitman) fix some adapter setting
-- (oweitman) prepare for release
+### **WORK IN PROGRESS**
+
+- (oweitman) Some adapter settings have been fixed.
+- (oweitman) Some adaption for a new release have been applied.
+- (mcm1957) Dependencies have been updated.
 - (pix) feat: new window shutter widget
-- (pix) feat: new humidity widget
+- (pix) feat: new humidity widget added
 
 ### 0.1.3 (2018-01-21)
 
