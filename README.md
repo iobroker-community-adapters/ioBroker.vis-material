@@ -22,7 +22,7 @@ https://github.com/Uhula/ioBroker-Material-Design-Style
 -->
 
 ## Changelog
-### 0.2.0-alpha.0 (2025-01-12)
+### **WORK IN PROGRESS**
 
 - (oweitman) Some adapter settings have been fixed.
 - (oweitman) Some adaption for a new release have been applied.
