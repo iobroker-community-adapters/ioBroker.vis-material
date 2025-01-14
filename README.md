@@ -1,6 +1,6 @@
-![Logo](admin/material.png)
-
 # ioBroker.vis-material
+
+![Logo](admin/material.png)
 
 ![Number of Installations](http://iobroker.live/badges/vis-material-installed.svg) ![Number of Installations](http://iobroker.live/badges/vis-material-stable.svg) [![NPM version](http://img.shields.io/npm/v/iobroker.vis-material.svg)](https://www.npmjs.com/package/iobroker.vis-material)
 [![Downloads](https://img.shields.io/npm/dm/iobroker.vis-material.svg)](https://www.npmjs.com/package/iobroker.vis-material)
@@ -12,7 +12,12 @@ material - Material widgets for ioBroker.vis.
 You can read instructions in material.js, material.html files
 
 These widgets are in addition to the material design style of Uhula, which you can find here:
-https://github.com/Uhula/ioBroker-Material-Design-Style
+[https://github.com/Uhula/ioBroker-Material-Design-Style](https://github.com/Uhula/ioBroker-Material-Design-Style)
+
+The adapter uses CSS to set a black background and white as the font color. This means that it is only suitable for dark vis layouts.
+
+In some installations, the font in the context menu may no longer be readable. This is probably caused by cross-effects from other adapters. To analyze these, please read the following post.
+[https://forum.iobroker.net/topic/79188/vis-anzeigen-zerst%C3%B6rt/27](https://forum.iobroker.net/topic/79188/vis-anzeigen-zerst%C3%B6rt/27)
 
 ![Example](img/widgets.png)
 
@@ -22,6 +27,7 @@ https://github.com/Uhula/ioBroker-Material-Design-Style
 -->
 
 ## Changelog
+
 ### 0.2.0 (2025-01-12)
 
 - (oweitman) Some adapter settings have been fixed.
