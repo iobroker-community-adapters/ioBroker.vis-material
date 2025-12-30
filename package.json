@@ -2,13 +2,11 @@
   "name": "iobroker.vis-material",
   "description": "material widgets for ioBroker.vis",
   "version": "0.2.0",
-  "author": {
-    "name": "nisiode",
-    "email": "nisio.air@gmail.com"
-  },
+  "author": "nisiode <nisio.air@gmail.com>",
   "contributors": [
     "nisiode <nisio.air@gmail.com>",
-    "pix <pix---@hotmail.com>"
+    "pix <pix---@hotmail.com>",
+    "iobroker-community-adapters <iobroker-community-adapters@gmx.de>"
   ],
   "homepage": "https://github.com/iobroker-community-adapters/ioBroker.vis-material.git",
   "repository": {

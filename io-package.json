@@ -129,7 +129,11 @@
       "type": "free",
       "license": "MIT"
     },
-    "dependencies": [],
+    "dependencies": [
+      {
+        "js-controller": ">=6.0.11"
+      }
+    ],
     "adminUI": {
       "config": "none"
     },
@@ -140,7 +144,12 @@
       "vis"
     ],
     "connectionType": "none",
-    "dataSource": "none"
+    "dataSource": "none",
+    "globalDependencies": [
+      {
+        "admin": ">=7.6.17"
+      }
+    ]
   },
   "native": {
     "dependencies": []

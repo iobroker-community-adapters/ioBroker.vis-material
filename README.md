@@ -28,6 +28,11 @@ In some installations, the font in the context menu may no longer be readable. T
 
 ## Changelog
 
+
+### **WORK IN PROGRESS**
+- (copilot) Adapter requires js-controller >= 6.0.11 now
+- (copilot) Adapter requires admin >= 7.6.17 now
+
 ### 0.2.0 (2025-01-12)
 
 - (oweitman) Some adapter settings have been fixed.
