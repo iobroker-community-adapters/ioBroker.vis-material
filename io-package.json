@@ -125,6 +125,7 @@
       "nisiode <nisio.air@gmail.com>",
       "iobroker-community-adapters <iobroker-community-adapters@gmx.de>"
     ],
+    "tier": 3,
     "licenseInformation": {
       "type": "free",
       "license": "MIT"
