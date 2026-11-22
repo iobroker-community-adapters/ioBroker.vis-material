@@ -1,6 +1,6 @@
 /*
     ioBroker.vis material Widget-Set
-    version: "0.1.4"
+    version: "0.2.0"
     Copyright 2018 nisiode<nisio.air@mail.com>
     forked by Pix 7/2018 (humidity, shutter)
 */
@@ -25,7 +25,7 @@ $.extend(true, systemDictionary, {
 });
 
 vis.binds.material = {
-    version: "0.1.5",
+    version: "0.2.0",
     showVersion: function () {
         if (vis.binds.material.version) {
             console.log('Version material: ' + vis.binds.material.version);
