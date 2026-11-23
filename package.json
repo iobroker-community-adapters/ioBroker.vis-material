@@ -46,7 +46,6 @@
     "test:integration": "mocha test/integration --exit",
     "test": "npm run test:package",
     "lint": "eslint -c eslint.config.mjs .",
-    "build": "node build.js",
     "translate": "translate-adapter",
     "release": "release-script"
   }
